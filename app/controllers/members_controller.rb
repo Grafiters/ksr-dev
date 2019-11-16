@@ -13,6 +13,17 @@ class MembersController < ApplicationController
             redirect_to new_members_path
         end
     end
+    def edit
+        @member = Member.find(params[:id])
+    end
+    def update
+        @member = Member.find(params[:id])
+        if @member.update_attributes(params_a)
+            redirect_to members_path
+        else
+            redirect_to edit_members_path
+        end
+    end
     private
         def params_a
             params.require(:member).permit(:name, :nim, :fakultas)
