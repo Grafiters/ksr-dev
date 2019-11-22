@@ -4,15 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>KSR PMI Unit UDINUS</title>
-	<link rel="icon" href="img/Fevicon.png" type="image/png">
 
-  <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
+  <%# <link rel="stylesheet" href="vendors/bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="vendors/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="vendors/themify-icons/themify-icons.css">
   <link rel="stylesheet" href="vendors/linericon/style.css">
   <link rel="stylesheet" href="vendors/flat-icon/font/flaticon.css">
-  <link rel="stylesheet" href="vendors/nice-select/nice-select.css">
+  <link rel="stylesheet" href="vendors/nice-select/nice-select.css"> %>
 
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="css/style.css">
@@ -100,18 +98,18 @@
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                 <div class="service-card text-center">
                   <div class="service-card-img">
-                    <img class="img-fluid" src="img/home/litbang.png" alt="">
+                    <%= image_tag("litbang.png", :alt => "", :class => "img-fluid")%>
                   </div>
                   <div class="service-card-body">
                     <h3>Divisi Litbang</h3>
-                    <p>Divisi yang bertugas atas semua kegiatan penalaran, penelitian, pengembangan, dan bertanggung jawab atas kegiatan yang dilaksanakan oleh KSR PMI Unit UDINUS</p>
+                    <p>Divisi yang memantau semua kegiatan penalaran, penelitian, pengembangan, dan bertanggung jawab atas kegiatan KSR PMI Unit UDINUS</p>
                   </div>
                 </div>
             </div>
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                 <div class="service-card text-center">
                   <div class="service-card-img">
-                    <img class="img-fluid" src="img/home/service2.png" alt="">
+                    <%= image_tag("service3.png", :alt => "", :class => "img-fluid")%>
                   </div>
                   <div class="service-card-body">
                     <h3>Divisi Diklat</h3>
@@ -122,7 +120,7 @@
             <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
                 <div class="service-card text-center">
                   <div class="service-card-img">
-                    <img class="img-fluid" src="img/home/service3.png" alt="">
+                    <%= image_tag("service2.png", :alt => "", :class => "img-fluid")%>
                   </div>
                   <div class="service-card-body">
                     <h3>Divisi Logistik</h3>
@@ -176,50 +174,9 @@
         </div>
         <div class="col-lg-6 col-xl-6 offset-xl-1">
           <div class="search-wrapper">
-            <h3>Search Package</h3>
-
-            <form class="search-form" action="#">
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Recipient's username">
-                  <div class="input-group-append">
-                    <span class="input-group-text"><i class="ti-search"></i></span>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <select name="category" id="category">
-                  <option value="disabled" disabled selected>Category</option>
-                  <option value="8 AM">8 AM</option>
-                  <option value="12 PM">12 PM</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <select name="tourDucation" id="tourDuration">
-                  <option value="disabled" disabled selected>Tour duration</option>
-                  <option value="8 AM">8 AM</option>
-                  <option value="12 PM">12 PM</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <div class="input-group">
-                  <input type="date" class="form-control">
-                  <div class="input-group-append">
-                    <span class="input-group-text"><i class="ti-notepad"></i></span>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <select name="priceRange" id="priceRange">
-                  <option value="disabled" disabled selected>Price range</option>
-                  <option value="8 AM">8 AM</option>
-                  <option value="12 PM">12 PM</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <button class="button border-0 mt-3" type="submit">Search Package</button>
-              </div>
-            </form>
+            <div style='width: 400px;'>  
+              <div id="map" style='width: 400px; height: 200px;'></div>  
+            </div> 
           </div>
         </div>
       </div>
@@ -354,5 +311,25 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Korps
   <%= javascript_include_tag "skrollr.min", "data-turbolinks-track" => true  %>
   <%# <script src="js/skrollr.min.js"></script> %>
   <%= javascript_include_tag "main", "data-turbolinks-track" => true  %>
+  <script type="text/javascript">  
+    handler = Gmaps.build('Google');  
+    handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){  
+      markers = handler.addMarkers([  
+        {  
+          "lat": 37.3333945,  
+          "lng": -121.8806499,  
+          "picture": {  
+            "width":  32,  
+            "height": 32  
+          },  
+          "infowindow": "SJSU"  
+        }  
+      ]);  
+      handler.bounds.extendWith(markers);  
+      handler.fitMapToBounds();  
+    });  
+  </script>
+
+
 </body>
 </html>
