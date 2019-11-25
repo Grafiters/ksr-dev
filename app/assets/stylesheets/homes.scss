@@ -124,7 +124,7 @@
     
     @media (min-width: 992px) {
       .section-padding {
-        padding: 130px 0;
+        padding: 100px 0;
       }
     }
     
@@ -916,9 +916,9 @@
       margin-bottom: 0;
     }
     
-    .section-intro-img {
-      margin-bottom: 10px;
-    }
+    // .section-intro-img {
+    //   margin-bottom: 10px;
+    // }
     
     /* section intro end
         ============================================================================================ */
@@ -962,6 +962,10 @@
       }
     }
     
+    .down{
+      padding-top: 30px;
+    }
+
     .about-content h2 {
       margin-bottom: 15px;
     }

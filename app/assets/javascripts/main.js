@@ -57,21 +57,22 @@ $(function() {
             }
         })
     }
-  
-});
 
-$('.carousel.carousel-multi-item.v-2 .carousel-item').each(function(){
-    var next = $(this).next();
-    if (!next.length) {
-      next = $(this).siblings(':first');
-    }
-    // next.children(':first-child').clone().appendTo($(this));
-  
-    for (var i=0;i<4;i++) {
-      next=next.next();
-      if (!next.length) {
-        next=$(this).siblings(':first');
-      }
-    //   next.children(':first-child').clone().appendTo($(this));
-    }
-  });
+    handler = Gmaps.build('Google');  
+    handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){  
+      markers = handler.addMarkers([  
+        {  
+          "lat": 37.3333945,  
+          "lng": -121.8806499,  
+          "picture": {  
+            "width":  32,  
+            "height": 32  
+          },  
+          "infowindow": "SJSU"  
+        }  
+      ]);  
+      handler.bounds.extendWith(markers);  
+      handler.fitMapToBounds();  
+    });
+    
+});
