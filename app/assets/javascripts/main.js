@@ -62,13 +62,13 @@ $(function() {
     handler.buildMap({ provider: {}, internal: {id: 'map'}}, function(){  
       markers = handler.addMarkers([  
         {  
-          "lat": 37.3333945,  
-          "lng": -121.8806499,  
+          "lat": -6.9808636,
+          "lng": 110.4060229,
           "picture": {  
-            "width":  32,  
-            "height": 32  
+            "width":  50,  
+            "height": 50  
           },  
-          "infowindow": "SJSU"  
+          "infowindow": "CAMP-KSR"  
         }  
       ]);  
       handler.bounds.extendWith(markers);  

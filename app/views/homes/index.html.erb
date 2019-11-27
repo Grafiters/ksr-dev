@@ -170,16 +170,85 @@
         <h2>Event</h2>
         <p>Berikut adalah beberapa event dari KSR PMI Unit UDINUS</p>
       </div>
-      <div class="row">
-        <div class="col-lg-7 col-md-6 mb-4 mb-md-0">
-          <div class="about-img">
-            <%= image_tag("donor-img.jpeg", :alt => "", :class => "img-fluid") %>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-lg-7 col-md-6 mb-4 mb-md-0">
+                <div class="about-img">
+                  <%= image_tag("donor-img.jpeg", :alt => "", :class => "img-fluid") %>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6 align-self-center about-content">
+                <h2>DONOR DARAH<br class="d-none d-xl-block"></h2>
+                <p>Donor Darah adalah salah satu kegiatan UKM KSR yang sanga rutin dilaksanakan dan acaara ini mengajak semua para mahasiswa, mahasiswi, dosen, dan pegawai UDINUS untuk mendonorkan darahnya, dan kegiatan ini rutin dilakukan 3 bulan sekali.</p>
+                <a class="button bg-danger" href="#">Learn More</a>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="col-lg-5 col-md-6 align-self-center about-content">
-          <h2>DONOR DARAH<br class="d-none d-xl-block"></h2>
-          <p>Donor Darah adalah salah satu kegiatan UKM KSR yang sanga rutin dilaksanakan dan acaara ini mengajak semua para mahasiswa, mahasiswi, dosen, dan pegawai UDINUS untuk mendonorkan darahnya, dan kegiatan ini rutin dilakukan 3 bulan sekali.</p>
-          <a class="button bg-danger" href="#">Learn More</a>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-7 col-md-6 mb-4 mb-md-0">
+                <div class="about-img">
+                  <%= image_tag("diklat.jpeg", :alt => "", :class => "img-fluid") %>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6 align-self-center about-content">
+                <h2>DIKLAT<br class="d-none d-xl-block"></h2>
+                <p>Donor Darah adalah salah satu kegiatan UKM KSR yang sanga rutin dilaksanakan dan acaara ini mengajak semua para mahasiswa, mahasiswi, dosen, dan pegawai UDINUS untuk mendonorkan darahnya, dan kegiatan ini rutin dilakukan 3 bulan sekali.</p>
+                <a class="button bg-danger" href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-7 col-md-6 mb-4 mb-md-0">
+                <div class="about-img">
+                  <%= image_tag("diklap.jpeg", :alt => "", :class => "img-fluid") %>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6 align-self-center about-content">
+                <h2>DIKLAP<br class="d-none d-xl-block"></h2>
+                <p>Donor Darah adalah salah satu kegiatan UKM KSR yang sanga rutin dilaksanakan dan acaara ini mengajak semua para mahasiswa, mahasiswi, dosen, dan pegawai UDINUS untuk mendonorkan darahnya, dan kegiatan ini rutin dilakukan 3 bulan sekali.</p>
+                <a class="button bg-danger" href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-7 col-md-6 mb-4 mb-md-0">
+                <div class="about-img">
+                  <%= image_tag("dfac.jpeg", :alt => "", :class => "img-fluid") %>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6 align-self-center about-content">
+                <h2>DFAC<br class="d-none d-xl-block"></h2>
+                <p>Donor Darah adalah salah satu kegiatan UKM KSR yang sanga rutin dilaksanakan dan acaara ini mengajak semua para mahasiswa, mahasiswi, dosen, dan pegawai UDINUS untuk mendonorkan darahnya, dan kegiatan ini rutin dilakukan 3 bulan sekali.</p>
+                <a class="button bg-danger" href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="row">
+              <div class="col-lg-7 col-md-6 mb-4 mb-md-0">
+                <div class="about-img">
+                  <%= image_tag("ots.jpeg", :alt => "", :class => "img-fluid") %>
+                </div>
+              </div>
+              <div class="col-lg-5 col-md-6 align-self-center about-content">
+                <h2>KSR On The School<br class="d-none d-xl-block"></h2>
+                <p>Donor Darah adalah salah satu kegiatan UKM KSR yang sanga rutin dilaksanakan dan acaara ini mengajak semua para mahasiswa, mahasiswi, dosen, dan pegawai UDINUS untuk mendonorkan darahnya, dan kegiatan ini rutin dilakukan 3 bulan sekali.</p>
+                <a class="button bg-danger" href="#">Learn More</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -222,7 +291,7 @@
       <div class="row">
         <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
           <div class="card-blog">
-            <img class="card-img rounded-0" src="img/home/diklat.jpeg" alt="">
+            <%= image_tag("diklat.jpeg", :alt => "", :class => "card-img rounded-0")%>
             <div class="card-blog-body">
               <a href="#">
                 <h4>Forest responds to consultation smoking in al fresco.</h4>
@@ -238,7 +307,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
           <div class="card-blog">
-            <img class="card-img rounded-0" src="img/home/diklap.jpeg" alt="">
+            <%= image_tag("diklap.jpeg", :alt => "", :class => "card-img rounded-0")%>
             <div class="card-blog-body">
               <a href="#">
                 <h4>Forest responds to consultation smoking in al fresco.</h4>
@@ -254,7 +323,7 @@
 
         <div class="col-md-6 col-lg-4 mb-4 mb-lg-0">
           <div class="card-blog">
-            <img class="card-img rounded-0" src="img/home/donor-img.jpeg" alt="">
+            <%= image_tag("donor-img.jpeg", :alt => "", :class => "card-img rounded-0")%>
             <div class="card-blog-body">
               <a href="#">
                 <h4>Forest responds to consultation smoking in al fresco.</h4>
