@@ -40,7 +40,8 @@ test:
 # On Heroku and other platform providers, you may have a full connection URL
 # available as an environment variable. For example:
 #
-#   DATABASE_URL="mysql2://myuser:mypass@localhost/somedatabase"
+  DATABASE_URL: mysql://b02560823de055:de094dc4@us-cdbr-iron-east-05.cleardb.net/heroku_919dd02574a6438?reconnect=true
+
 #
 # You can use this database configuration with:
 #
