@@ -1,0 +1,6 @@
+<%= form_for @event do |f| %>
+    <%= f.text_field :name, placeholder: "Judul Events" %>
+    <%= f.text_field :description, placeholder: "Deskripsi" %>
+    <%= f.date_field :time, placeholder: "Tanggal Pelaksanaan" %>
+    <%= f.submit %>
+<% end %>
