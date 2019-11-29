@@ -1,0 +1,12 @@
+I""(function() {
+  $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function() {
+    var next;
+    next = $(this).next();
+    if (!next.length) {
+      next = $(this).siblings(':first');
+    }
+    return next.children(':first-child').clone().appendTo($(this));
+  });
+
+}).call(this);
+:ET

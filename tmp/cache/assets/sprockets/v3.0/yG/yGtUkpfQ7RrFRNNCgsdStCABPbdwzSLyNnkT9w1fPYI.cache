@@ -1,0 +1,11 @@
+I"å(function() {
+  $('.carousel.carousel-multi-item.v-2 .carousel-item').each(function() {
+    var next;
+    next = $(this).next();
+    if (!next.length) {
+      return next = $(this).siblings(':first');
+    }
+  });
+
+}).call(this);
+:ET
