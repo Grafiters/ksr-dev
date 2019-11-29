@@ -10,12 +10,12 @@
 #   https://dev.mysql.com/doc/refman/5.7/en/password-hashing.html
 #
 default: &default
-  adapter: postgresql
-  encoding: unicode
+  adapter: mysql2
+  encoding: utf8
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  # username: b02560823de055
-  # password: de094dc4
-  # socket: /var/run/mysqld/mysqld.sock
+  username: root
+  password: Grafiters
+  socket: /var/run/mysqld/mysqld.sock
 
 development:
   <<: *default
@@ -40,8 +40,7 @@ test:
 # On Heroku and other platform providers, you may have a full connection URL
 # available as an environment variable. For example:
 #
-  # DATABASE_URL: mysql://b02560823de055:de094dc4@us-cdbr-iron-east-05.cleardb.net/heroku_919dd02574a6438?reconnect=true
-
+#   DATABASE_URL="mysql2://myuser:mypass@localhost/somedatabase"
 #
 # You can use this database configuration with:
 #
