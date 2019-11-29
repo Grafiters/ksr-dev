@@ -31,6 +31,7 @@ gem 'bootstrap', '~> 4.3.1'
 gem 'gmaps4rails'
 gem 'jquery-sliders-rails', '~> 0.0.1'
 gem 'jquery-rails'
+gem 'pg'
 
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
@@ -65,7 +66,6 @@ end
 
 group :production do 
   gem 'rails_12factor'
-  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
