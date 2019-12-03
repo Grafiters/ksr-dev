@@ -49,6 +49,6 @@ test:
 #
 production:
   <<: *default
-  database: ksr-dev_production
-  username: ksr-dev
+  database: ksr
+  username: root
   password: <%= ENV['KSR-DEV_DATABASE_PASSWORD'] %>
