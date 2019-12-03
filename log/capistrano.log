@@ -1,0 +1,848 @@
+# Logfile created on 2019-12-03 19:45:29 +0700 by logger.rb/61378
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-12-03 19:45:29 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [59bd7bed] Running [ -d $HOME/.rbenv/versions/2.5.4 ] as deploy@157.245.53.198
+ DEBUG [59bd7bed] Command: [ -d $HOME/.rbenv/versions/2.5.4 ]
+ DEBUG [59bd7bed] Finished in 4.175 seconds with exit status 0 (successful).
+ DEBUG [febedd55] Running /usr/bin/env which passenger as deploy@157.245.53.198
+ DEBUG [febedd55] Command: /usr/bin/env which passenger
+ DEBUG [febedd55] 	/usr/bin/passenger
+ DEBUG [febedd55] Finished in 0.132 seconds with exit status 0 (successful).
+  INFO [a21a94a4] Running /usr/bin/env mkdir -p /tmp as deploy@157.245.53.198
+ DEBUG [a21a94a4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mkdir -p /tmp )
+  INFO [a21a94a4] Finished in 0.127 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ksr-dev-production-grafiters.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ksr-dev-production-grafiters.sh 100.0%
+  INFO [fe42e97c] Running /usr/bin/env chmod 700 /tmp/git-ssh-ksr-dev-production-grafiters.sh as deploy@157.245.53.198
+ DEBUG [fe42e97c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env chmod 700 /tmp/git-ssh-ksr-dev-production-grafiters.sh )
+  INFO [fe42e97c] Finished in 0.134 seconds with exit status 0 (successful).
+  INFO [70f93c8a] Running /usr/bin/env git ls-remote git@github.com:Grafiters/ksr-dev.git HEAD as deploy@157.245.53.198
+ DEBUG [70f93c8a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git ls-remote git@github.com:Grafiters/ksr-dev.git HEAD )
+ DEBUG [70f93c8a] 	Warning: Permanently added 'github.com,13.250.177.223' (RSA) to the list of known hosts.
+ DEBUG [70f93c8a] 	git@github.com: Permission denied (publickey).
+ DEBUG [70f93c8a] 	fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-12-03 19:49:55 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [64476332] Running [ -d $HOME/.rbenv/versions/2.5.4 ] as deploy@157.245.53.198
+ DEBUG [64476332] Command: [ -d $HOME/.rbenv/versions/2.5.4 ]
+ DEBUG [64476332] Finished in 3.784 seconds with exit status 0 (successful).
+ DEBUG [295b2b0e] Running /usr/bin/env which passenger as deploy@157.245.53.198
+ DEBUG [295b2b0e] Command: /usr/bin/env which passenger
+ DEBUG [295b2b0e] 	/usr/bin/passenger
+ DEBUG [295b2b0e] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [97b4e626] Running /usr/bin/env mkdir -p /tmp as deploy@157.245.53.198
+ DEBUG [97b4e626] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mkdir -p /tmp )
+  INFO [97b4e626] Finished in 0.123 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ksr-dev-production-grafiters.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ksr-dev-production-grafiters.sh 100.0%
+  INFO [c253889b] Running /usr/bin/env chmod 700 /tmp/git-ssh-ksr-dev-production-grafiters.sh as deploy@157.245.53.198
+ DEBUG [c253889b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env chmod 700 /tmp/git-ssh-ksr-dev-production-grafiters.sh )
+  INFO [c253889b] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [09a110fb] Running /usr/bin/env git ls-remote https://github.com/Grafiters/ksr-dev.git HEAD as deploy@157.245.53.198
+ DEBUG [09a110fb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git ls-remote https://github.com/Grafiters/ksr-dev.git HEAD )
+ DEBUG [09a110fb] 	188540ab6fa8e02581bc7ac3259d3015f185721e	HEAD
+  INFO [09a110fb] Finished in 1.206 seconds with exit status 0 (successful).
+  INFO [8117f4d1] Running /usr/bin/env mkdir -p /home/deploy/ksr-dev/shared /home/deploy/ksr-dev/releases as deploy@157.245.53.198
+ DEBUG [8117f4d1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mkdir -p /home/deploy/ksr-dev/shared /home/deploy/ksr-dev/releases )
+  INFO [8117f4d1] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [90451fd2] Running /usr/bin/env mkdir -p /home/deploy/ksr-dev/shared/log /home/deploy/ksr-dev/shared/tmp/pids /home/deploy/ksr-dev/shared/tmp/cache /home/deploy/ksr-dev/shared/tmp/sockets /home/deploy/ksr-dev/shared/public/system /home/deploy/ksr-dev/shared/public/assets as deploy@157.245.53.198
+ DEBUG [90451fd2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mkdir -p /home/deploy/ksr-dev/shared/log /home/deploy/ksr-dev/shared/tmp/pids /home/deploy/ksr-dev/shared/tmp/cache /home/deploy/ksr-dev/shared/tmp/sockets /home/deploy/ksr-dev/shared/public/system /home/deploy/ksr-dev/shared/public/assets )
+  INFO [90451fd2] Finished in 0.127 seconds with exit status 0 (successful).
+ DEBUG [d127c985] Running [ -f /home/deploy/ksr-dev/current/REVISION ] as deploy@157.245.53.198
+ DEBUG [d127c985] Command: [ -f /home/deploy/ksr-dev/current/REVISION ]
+ DEBUG [d127c985] Finished in 0.121 seconds with exit status 1 (failed).
+ DEBUG [3750453a] Running [ -f /home/deploy/ksr-dev/repo/HEAD ] as deploy@157.245.53.198
+ DEBUG [3750453a] Command: [ -f /home/deploy/ksr-dev/repo/HEAD ]
+ DEBUG [3750453a] Finished in 0.122 seconds with exit status 1 (failed).
+ DEBUG [ac2ffaf2] Running if test ! -d /home/deploy/ksr-dev; then echo "Directory does not exist '/home/deploy/ksr-dev'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [ac2ffaf2] Command: if test ! -d /home/deploy/ksr-dev; then echo "Directory does not exist '/home/deploy/ksr-dev'" 1>&2; false; fi
+ DEBUG [ac2ffaf2] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [311c16ab] Running /usr/bin/env git clone --mirror https://github.com/Grafiters/ksr-dev.git /home/deploy/ksr-dev/repo as deploy@157.245.53.198
+ DEBUG [311c16ab] Command: cd /home/deploy/ksr-dev && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git clone --mirror https://github.com/Grafiters/ksr-dev.git /home/deploy/ksr-dev/repo )
+ DEBUG [311c16ab] 	Cloning into bare repository '/home/deploy/ksr-dev/repo'...
+  INFO [311c16ab] Finished in 5.164 seconds with exit status 0 (successful).
+ DEBUG [9d4f8eda] Running if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [9d4f8eda] Command: if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi
+ DEBUG [9d4f8eda] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [283b8f2d] Running /usr/bin/env git remote set-url origin https://github.com/Grafiters/ksr-dev.git as deploy@157.245.53.198
+ DEBUG [283b8f2d] Command: cd /home/deploy/ksr-dev/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git remote set-url origin https://github.com/Grafiters/ksr-dev.git )
+  INFO [283b8f2d] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [01d4df93] Running /usr/bin/env git remote update --prune as deploy@157.245.53.198
+ DEBUG [01d4df93] Command: cd /home/deploy/ksr-dev/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [01d4df93] 	Fetching origin
+  INFO [01d4df93] Finished in 0.965 seconds with exit status 0 (successful).
+ DEBUG [9e0bef7f] Running if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [9e0bef7f] Command: if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi
+ DEBUG [9e0bef7f] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [62ccd246] Running /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203125001 as deploy@157.245.53.198
+ DEBUG [62ccd246] Command: cd /home/deploy/ksr-dev/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203125001 )
+  INFO [62ccd246] Finished in 0.129 seconds with exit status 0 (successful).
+  INFO [e042bdbf] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/ksr-dev/releases/20191203125001 as deploy@157.245.53.198
+ DEBUG [e042bdbf] Command: cd /home/deploy/ksr-dev/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/ksr-dev/releases/20191203125001 )
+  INFO [e042bdbf] Finished in 0.311 seconds with exit status 0 (successful).
+ DEBUG [d914cb95] Running if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [d914cb95] Command: if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi
+ DEBUG [d914cb95] Finished in 0.126 seconds with exit status 0 (successful).
+ DEBUG [638cd99e] Running /usr/bin/env git rev-list --max-count=1 master as deploy@157.245.53.198
+ DEBUG [638cd99e] Command: cd /home/deploy/ksr-dev/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [638cd99e] 	188540ab6fa8e02581bc7ac3259d3015f185721e
+ DEBUG [638cd99e] Finished in 0.132 seconds with exit status 0 (successful).
+ DEBUG [c09a66ed] Running if test ! -d /home/deploy/ksr-dev/releases/20191203125001; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203125001'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [c09a66ed] Command: if test ! -d /home/deploy/ksr-dev/releases/20191203125001; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203125001'" 1>&2; false; fi
+ DEBUG [c09a66ed] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [a864c9c8] Running /usr/bin/env echo "188540ab6fa8e02581bc7ac3259d3015f185721e" > REVISION as deploy@157.245.53.198
+ DEBUG [a864c9c8] Command: cd /home/deploy/ksr-dev/releases/20191203125001 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env echo "188540ab6fa8e02581bc7ac3259d3015f185721e" > REVISION )
+  INFO [a864c9c8] Finished in 0.129 seconds with exit status 0 (successful).
+  INFO [ac31d0ac] Running /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203125001 /home/deploy/ksr-dev/releases/20191203125001/tmp /home/deploy/ksr-dev/releases/20191203125001/public as deploy@157.245.53.198
+ DEBUG [ac31d0ac] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203125001 /home/deploy/ksr-dev/releases/20191203125001/tmp /home/deploy/ksr-dev/releases/20191203125001/public )
+  INFO [ac31d0ac] Finished in 0.122 seconds with exit status 0 (successful).
+ DEBUG [110f978a] Running [ -L /home/deploy/ksr-dev/releases/20191203125001/log ] as deploy@157.245.53.198
+ DEBUG [110f978a] Command: [ -L /home/deploy/ksr-dev/releases/20191203125001/log ]
+ DEBUG [110f978a] Finished in 0.125 seconds with exit status 1 (failed).
+ DEBUG [1fa19949] Running [ -d /home/deploy/ksr-dev/releases/20191203125001/log ] as deploy@157.245.53.198
+ DEBUG [1fa19949] Command: [ -d /home/deploy/ksr-dev/releases/20191203125001/log ]
+ DEBUG [1fa19949] Finished in 0.129 seconds with exit status 0 (successful).
+  INFO [4765ea4f] Running /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203125001/log as deploy@157.245.53.198
+ DEBUG [4765ea4f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203125001/log )
+  INFO [4765ea4f] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [b69ecbb6] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/log /home/deploy/ksr-dev/releases/20191203125001/log as deploy@157.245.53.198
+ DEBUG [b69ecbb6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/log /home/deploy/ksr-dev/releases/20191203125001/log )
+  INFO [b69ecbb6] Finished in 0.128 seconds with exit status 0 (successful).
+ DEBUG [add77a48] Running [ -L /home/deploy/ksr-dev/releases/20191203125001/tmp/pids ] as deploy@157.245.53.198
+ DEBUG [add77a48] Command: [ -L /home/deploy/ksr-dev/releases/20191203125001/tmp/pids ]
+ DEBUG [add77a48] Finished in 0.127 seconds with exit status 1 (failed).
+ DEBUG [9b056d16] Running [ -d /home/deploy/ksr-dev/releases/20191203125001/tmp/pids ] as deploy@157.245.53.198
+ DEBUG [9b056d16] Command: [ -d /home/deploy/ksr-dev/releases/20191203125001/tmp/pids ]
+ DEBUG [9b056d16] Finished in 0.124 seconds with exit status 1 (failed).
+  INFO [f318cb0c] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/pids /home/deploy/ksr-dev/releases/20191203125001/tmp/pids as deploy@157.245.53.198
+ DEBUG [f318cb0c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/pids /home/deploy/ksr-dev/releases/20191203125001/tmp/pids )
+  INFO [f318cb0c] Finished in 0.127 seconds with exit status 0 (successful).
+ DEBUG [eb5e0e7e] Running [ -L /home/deploy/ksr-dev/releases/20191203125001/tmp/cache ] as deploy@157.245.53.198
+ DEBUG [eb5e0e7e] Command: [ -L /home/deploy/ksr-dev/releases/20191203125001/tmp/cache ]
+ DEBUG [eb5e0e7e] Finished in 0.124 seconds with exit status 1 (failed).
+ DEBUG [5eb5447a] Running [ -d /home/deploy/ksr-dev/releases/20191203125001/tmp/cache ] as deploy@157.245.53.198
+ DEBUG [5eb5447a] Command: [ -d /home/deploy/ksr-dev/releases/20191203125001/tmp/cache ]
+ DEBUG [5eb5447a] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [5ccff468] Running /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203125001/tmp/cache as deploy@157.245.53.198
+ DEBUG [5ccff468] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203125001/tmp/cache )
+  INFO [5ccff468] Finished in 0.197 seconds with exit status 0 (successful).
+  INFO [06cff27a] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/cache /home/deploy/ksr-dev/releases/20191203125001/tmp/cache as deploy@157.245.53.198
+ DEBUG [06cff27a] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/cache /home/deploy/ksr-dev/releases/20191203125001/tmp/cache )
+  INFO [06cff27a] Finished in 0.133 seconds with exit status 0 (successful).
+ DEBUG [d75da9fb] Running [ -L /home/deploy/ksr-dev/releases/20191203125001/tmp/sockets ] as deploy@157.245.53.198
+ DEBUG [d75da9fb] Command: [ -L /home/deploy/ksr-dev/releases/20191203125001/tmp/sockets ]
+ DEBUG [d75da9fb] Finished in 0.123 seconds with exit status 1 (failed).
+ DEBUG [75812c0a] Running [ -d /home/deploy/ksr-dev/releases/20191203125001/tmp/sockets ] as deploy@157.245.53.198
+ DEBUG [75812c0a] Command: [ -d /home/deploy/ksr-dev/releases/20191203125001/tmp/sockets ]
+ DEBUG [75812c0a] Finished in 0.124 seconds with exit status 1 (failed).
+  INFO [50568edf] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/sockets /home/deploy/ksr-dev/releases/20191203125001/tmp/sockets as deploy@157.245.53.198
+ DEBUG [50568edf] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/sockets /home/deploy/ksr-dev/releases/20191203125001/tmp/sockets )
+  INFO [50568edf] Finished in 0.132 seconds with exit status 0 (successful).
+ DEBUG [a31896d9] Running [ -L /home/deploy/ksr-dev/releases/20191203125001/public/system ] as deploy@157.245.53.198
+ DEBUG [a31896d9] Command: [ -L /home/deploy/ksr-dev/releases/20191203125001/public/system ]
+ DEBUG [a31896d9] Finished in 0.125 seconds with exit status 1 (failed).
+ DEBUG [3eb6a82b] Running [ -d /home/deploy/ksr-dev/releases/20191203125001/public/system ] as deploy@157.245.53.198
+ DEBUG [3eb6a82b] Command: [ -d /home/deploy/ksr-dev/releases/20191203125001/public/system ]
+ DEBUG [3eb6a82b] Finished in 0.126 seconds with exit status 1 (failed).
+  INFO [e6100170] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/public/system /home/deploy/ksr-dev/releases/20191203125001/public/system as deploy@157.245.53.198
+ DEBUG [e6100170] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/public/system /home/deploy/ksr-dev/releases/20191203125001/public/system )
+  INFO [e6100170] Finished in 0.127 seconds with exit status 0 (successful).
+ DEBUG [c3189b72] Running [ -L /home/deploy/ksr-dev/releases/20191203125001/public/assets ] as deploy@157.245.53.198
+ DEBUG [c3189b72] Command: [ -L /home/deploy/ksr-dev/releases/20191203125001/public/assets ]
+ DEBUG [c3189b72] Finished in 0.126 seconds with exit status 1 (failed).
+ DEBUG [c0d3af1d] Running [ -d /home/deploy/ksr-dev/releases/20191203125001/public/assets ] as deploy@157.245.53.198
+ DEBUG [c0d3af1d] Command: [ -d /home/deploy/ksr-dev/releases/20191203125001/public/assets ]
+ DEBUG [c0d3af1d] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [0684cecc] Running /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203125001/public/assets as deploy@157.245.53.198
+ DEBUG [0684cecc] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203125001/public/assets )
+  INFO [0684cecc] Finished in 0.133 seconds with exit status 0 (successful).
+  INFO [92f14094] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/public/assets /home/deploy/ksr-dev/releases/20191203125001/public/assets as deploy@157.245.53.198
+ DEBUG [92f14094] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/public/assets /home/deploy/ksr-dev/releases/20191203125001/public/assets )
+  INFO [92f14094] Finished in 0.123 seconds with exit status 0 (successful).
+ DEBUG [3c094aa6] Running if test ! -d /home/deploy/ksr-dev/releases/20191203125001; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203125001'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [3c094aa6] Command: if test ! -d /home/deploy/ksr-dev/releases/20191203125001; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203125001'" 1>&2; false; fi
+ DEBUG [3c094aa6] Finished in 0.129 seconds with exit status 0 (successful).
+ DEBUG [a43fa4cb] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /home/deploy/ksr-dev/shared/bundle as deploy@157.245.53.198
+ DEBUG [a43fa4cb] Command: cd /home/deploy/ksr-dev/releases/20191203125001 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /home/deploy/ksr-dev/shared/bundle )
+ DEBUG [a43fa4cb] 	The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+ DEBUG [a43fa4cb] 	The following gems are missing
+ DEBUG [a43fa4cb] 	 * rake (13.0.1)
+ DEBUG [a43fa4cb] 	 * concurrent-ruby (1.1.5)
+ DEBUG [a43fa4cb] 	 * i18n (1.7.0)
+ DEBUG [a43fa4cb] 	 * minitest (5.13.0)
+ DEBUG [a43fa4cb] 	 * thread_safe (0.3.6)
+ DEBUG [a43fa4cb] 	 * tzinfo (1.2.5)
+ DEBUG [a43fa4cb] 	 * activesupport (5.2.3)
+ DEBUG [a43fa4cb] 	 * builder (3.2.3)
+ DEBUG [a43fa4cb] 	 * erubi (1.9.0)
+ DEBUG [a43fa4cb] 	 * mini_portile2 (2.4.0)
+ DEBUG [a43fa4cb] 	 * nokogiri (1.10.5)
+ DEBUG [a43fa4cb] 	 * rails-dom-testing (2.0.3)
+ DEBUG [a43fa4cb] 	 * crass (1.0.5)
+ DEBUG [a43fa4cb] 	 * loofah (2.3.1)
+ DEBUG [a43fa4cb] 	 * rails-html-sanitizer (1.3.0)
+ DEBUG [a43fa4cb] 	 * actionview (5.2.3)
+ DEBUG [a43fa4cb] 	 * rack (2.0.7)
+ DEBUG [a43fa4cb] 	 * rack-test (1.1.0)
+ DEBUG [a43fa4cb] 	 * actionpack (5.2.3)
+ DEBUG [a43fa4cb] 	 * nio4r (2.5.2)
+ DEBUG [a43fa4cb] 	 * websocket-extensions (0.1.4)
+ DEBUG [a43fa4cb] 	 * websocket-driver (0.7.1)
+ DEBUG [a43fa4cb] 	 * actioncable (5.2.3)
+ DEBUG [a43fa4cb] 	 * globalid (0.4.2)
+ DEBUG [a43fa4cb] 	 * activejob (5.2.3)
+ DEBUG [a43fa4cb] 	 * mini_mime (1.0.2)
+ DEBUG [a43fa4cb] 	 * mail (2.7.1)
+ DEBUG [a43fa4cb] 	 * actionmailer (5.2.3)
+ DEBUG [a43fa4cb] 	 * activemodel (5.2.3)
+ DEBUG [a43fa4cb] 	 * arel (9.0.0)
+ DEBUG [a43fa4cb] 	 * activerecord (5.2.3)
+ DEBUG [a43fa4cb] 	 * mimemagic (0.3.3)
+ DEBUG [a43fa4cb] 	 * marcel (0.3.3)
+ DEBUG [a43fa4cb] 	 * activestorage (5.2.3)
+ DEBUG [a43fa4cb] 	 * public_suffix (4.0.1)
+ DEBUG [a43fa4cb] 	 * addressable (2.7.0)
+ DEBUG [a43fa4cb] 	 * io-like (0.3.0)
+ DEBUG [a43fa4cb] 	 * archive-zip (0.12.0)
+ DEBUG [a43fa4cb] 	 * execjs (2.7.0)
+ DEBUG [a43fa4cb] 	 * autoprefixer-rails (9.7.2)
+ DEBUG [a43fa4cb] 	 * bindex (0.8.1)
+ DEBUG [a43fa4cb] 	 * msgpack (1.3.1)
+ DEBUG [a43fa4cb] 	 * bootsnap (1.4.5)
+ DEBUG [a43fa4cb] 	 * popper_js (1.14.5)
+ DEBUG [a43fa4cb] 	 * method_source (0.9.2)
+ DEBUG [a43fa4cb] 	 * thor (0.20.3)
+ DEBUG [a43fa4cb] 	 * railties (5.2.3)
+ DEBUG [a43fa4cb] 	 * ffi (1.11.2)
+ DEBUG [a43fa4cb] 	 * sassc (2.2.1)
+ DEBUG [a43fa4cb] 	 * sprockets (3.7.2)
+ DEBUG [a43fa4cb] 	 * sprockets-rails (3.2.1)
+ DEBUG [a43fa4cb] 	 * tilt (2.0.10)
+ DEBUG [a43fa4cb] 	 * sassc-rails (2.1.2)
+ DEBUG [a43fa4cb] 	 * bootstrap (4.3.1)
+ DEBUG [a43fa4cb] 	 * byebug (11.0.1)
+ DEBUG [a43fa4cb] 	 * regexp_parser (1.6.0)
+ DEBUG [a43fa4cb] 	 * xpath (3.2.0)
+ DEBUG [a43fa4cb] 	 * capybara (3.29.0)
+ DEBUG [a43fa4cb] 	 * childprocess (3.0.0)
+ DEBUG [a43fa4cb] 	 * chromedriver-helper (2.1.1)
+ DEBUG [a43fa4cb] 	 * coffee-script-source (1.12.2)
+ DEBUG [a43fa4cb] 	 * coffee-script (2.4.1)
+ DEBUG [a43fa4cb] 	 * coffee-rails (4.2.2)
+ DEBUG [a43fa4cb] 	 * gmaps4rails (2.1.2)
+ DEBUG [a43fa4cb] 	 * jbuilder (2.9.1)
+ DEBUG [a43fa4cb] 	 * jquery-rails (4.3.5)
+ DEBUG [a43fa4cb] 	 * jquery-sliders-rails (0.0.1)
+ DEBUG [a43fa4cb] 	 * kgio (2.11.2)
+ DEBUG [a43fa4cb] 	 * rb-fsevent (0.10.3)
+ DEBUG [a43fa4cb] 	 * rb-inotify (0.10.0)
+ DEBUG [a43fa4cb] 	 * ruby_dep (1.5.0)
+ DEBUG [a43fa4cb] 	 * listen (3.1.5)
+ DEBUG [a43fa4cb] 	 * mysql2 (0.5.2)
+ DEBUG [a43fa4cb] 	 * puma (3.12.1)
+ DEBUG [a43fa4cb] 	 * rails (5.2.3)
+ DEBUG [a43fa4cb] 	 * raindrops (0.19.0)
+ DEBUG [a43fa4cb] 	 * rubyzip (2.0.0)
+ DEBUG [a43fa4cb] 	 * sass-listen (4.0.0)
+ DEBUG [a43fa4cb] 	 * sass (3.7.4)
+ DEBUG [a43fa4cb] 	 * sass-rails (5.1.0)
+ DEBUG [a43fa4cb] 	 * selenium-webdriver (3.142.6)
+ DEBUG [a43fa4cb] 	 * spring (2.1.0)
+ DEBUG [a43fa4cb] 	 * spring-watcher-listen (2.0.1)
+ DEBUG [a43fa4cb] 	 * turbolinks-source (5.2.0)
+ DEBUG [a43fa4cb] 	 * turbolinks (5.2.1)
+ DEBUG [a43fa4cb] 	 * uglifier (4.2.0)
+ DEBUG [a43fa4cb] 	 * unicorn (5.5.1)
+ DEBUG [a43fa4cb] 	 * web-console (3.7.0)
+ DEBUG [a43fa4cb] 	Install missing gems with `bundle install`
+ DEBUG [a43fa4cb] Finished in 0.473 seconds with exit status 1 (failed).
+  INFO [039be2b3] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /home/deploy/ksr-dev/shared/bundle --jobs 4 --without development test --deployment --quiet as deploy@157.245.53.198
+ DEBUG [039be2b3] Command: cd /home/deploy/ksr-dev/releases/20191203125001 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /home/deploy/ksr-dev/shared/bundle --jobs 4 --without development test --deployment --quiet )
+ DEBUG [039be2b3] 	Gem::Ext::BuildError: ERROR: Failed to build gem native extension.
+
+current directory:
+/home/deploy/ksr-dev/shared/bundle/ruby/2.5.0/gems/sassc-2.2.1/ext
+/home/deploy/.rbenv/versions/2.5.4/bin/ruby -r
+./siteconf20191203-10552-1am04xs.rb extconf.rb
+creating Makefile
+
+current directory:
+/home/deploy/ksr-dev/shared/bundle/ruby/2.5.0/gems/sassc-2.2.1/ext
+make "DESTDIR=" clean
+
+current directory:
+/home/deploy/ksr-dev/shared/bundle/ruby/2.5.0/gems/sassc-2.2.1/ext
+make "DESTDIR="
+compiling ./libsass/src/cencode.c
+compiling ./libsass/src/c99func.c
+compiling ./libsass/src/sass2scss.cpp
+compiling ./libsass/src/ast_fwd_decl.cpp
+compiling ./libsass/src/ast_values.cpp
+compiling ./libsass/src/to_value.cpp
+compiling ./libsass/src/sass.cpp
+compiling ./libsass/src/eval.cpp
+compiling ./libsass/src/ast.cpp
+compiling ./libsass/src/check_nesting.cpp
+compiling ./libsass/src/inspect.cpp
+compiling ./libsass/src/color_maps.cpp
+compiling ./libsass/src/c2ast.cpp
+compiling ./libsass/src/bind.cpp
+compiling ./libsass/src/fn_utils.cpp
+compiling ./libsass/src/lexer.cpp
+compiling ./libsass/src/fn_numbers.cpp
+compiling ./libsass/src/expand.cpp
+compiling ./libsass/src/output.cpp
+compiling ./libsass/src/sass_functions.cpp
+compiling ./libsass/src/ast_supports.cpp
+compiling ./libsass/src/cssize.cpp
+compiling ./libsass/src/sass_util.cpp
+compiling ./libsass/src/extend.cpp
+
+cc1plus: out of memory allocating 524288 bytes after a total of 12234752 bytes
+Makefile:233: recipe for target 'extend.o' failed
+make: *** [extend.o] Error 1
+
+make failed, exit code 2
+
+Gem files will remain installed in
+/home/deploy/ksr-dev/shared/bundle/ruby/2.5.0/gems/sassc-2.2.1 for inspection.
+Results logged to
+/home/deploy/ksr-dev/shared/bundle/ruby/2.5.0/extensions/x86_64-linux/2.5.0/sassc-2.2.1/gem_make.out
+
+An error occurred while installing sassc (2.2.1), and Bundler cannot continue.
+Make sure that `gem install sassc -v '2.2.1' --source 'https://rubygems.org/'`
+succeeds before bundling.
+
+In Gemfile:
+  bootstrap was resolved to 4.3.1, which depends on
+    sassc-rails was resolved to 2.1.2, which depends on
+      sassc
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-12-03 20:01:47 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [c30a4073] Running [ -d $HOME/.rbenv/versions/2.5.4 ] as deploy@157.245.53.198
+ DEBUG [c30a4073] Command: [ -d $HOME/.rbenv/versions/2.5.4 ]
+ DEBUG [c30a4073] Finished in 4.675 seconds with exit status 0 (successful).
+ DEBUG [a06e54c6] Running /usr/bin/env which passenger as deploy@157.245.53.198
+ DEBUG [a06e54c6] Command: /usr/bin/env which passenger
+ DEBUG [a06e54c6] 	/usr/bin/passenger
+ DEBUG [a06e54c6] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [cb231d4e] Running /usr/bin/env mkdir -p /tmp as deploy@157.245.53.198
+ DEBUG [cb231d4e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mkdir -p /tmp )
+  INFO [cb231d4e] Finished in 0.124 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ksr-dev-production-grafiters.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ksr-dev-production-grafiters.sh 100.0%
+  INFO [2089de61] Running /usr/bin/env chmod 700 /tmp/git-ssh-ksr-dev-production-grafiters.sh as deploy@157.245.53.198
+ DEBUG [2089de61] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env chmod 700 /tmp/git-ssh-ksr-dev-production-grafiters.sh )
+  INFO [2089de61] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [ae5b0f72] Running /usr/bin/env git ls-remote https://github.com/Grafiters/ksr-dev.git HEAD as deploy@157.245.53.198
+ DEBUG [ae5b0f72] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git ls-remote https://github.com/Grafiters/ksr-dev.git HEAD )
+ DEBUG [ae5b0f72] 	188540ab6fa8e02581bc7ac3259d3015f185721e	HEAD
+  INFO [ae5b0f72] Finished in 1.132 seconds with exit status 0 (successful).
+  INFO [153c5148] Running /usr/bin/env mkdir -p /home/deploy/ksr-dev/shared /home/deploy/ksr-dev/releases as deploy@157.245.53.198
+ DEBUG [153c5148] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mkdir -p /home/deploy/ksr-dev/shared /home/deploy/ksr-dev/releases )
+  INFO [153c5148] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [5159c040] Running /usr/bin/env mkdir -p /home/deploy/ksr-dev/shared/log /home/deploy/ksr-dev/shared/tmp/pids /home/deploy/ksr-dev/shared/tmp/cache /home/deploy/ksr-dev/shared/tmp/sockets /home/deploy/ksr-dev/shared/public/system /home/deploy/ksr-dev/shared/public/assets as deploy@157.245.53.198
+ DEBUG [5159c040] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mkdir -p /home/deploy/ksr-dev/shared/log /home/deploy/ksr-dev/shared/tmp/pids /home/deploy/ksr-dev/shared/tmp/cache /home/deploy/ksr-dev/shared/tmp/sockets /home/deploy/ksr-dev/shared/public/system /home/deploy/ksr-dev/shared/public/assets )
+  INFO [5159c040] Finished in 0.126 seconds with exit status 0 (successful).
+ DEBUG [87c1f0c0] Running [ -f /home/deploy/ksr-dev/current/REVISION ] as deploy@157.245.53.198
+ DEBUG [87c1f0c0] Command: [ -f /home/deploy/ksr-dev/current/REVISION ]
+ DEBUG [87c1f0c0] Finished in 0.125 seconds with exit status 1 (failed).
+ DEBUG [8c068a0d] Running [ -f /home/deploy/ksr-dev/repo/HEAD ] as deploy@157.245.53.198
+ DEBUG [8c068a0d] Command: [ -f /home/deploy/ksr-dev/repo/HEAD ]
+ DEBUG [8c068a0d] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/ksr-dev/repo
+ DEBUG [f69227dd] Running if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [f69227dd] Command: if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi
+ DEBUG [f69227dd] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [d48b9118] Running /usr/bin/env git remote set-url origin https://github.com/Grafiters/ksr-dev.git as deploy@157.245.53.198
+ DEBUG [d48b9118] Command: cd /home/deploy/ksr-dev/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git remote set-url origin https://github.com/Grafiters/ksr-dev.git )
+  INFO [d48b9118] Finished in 0.131 seconds with exit status 0 (successful).
+  INFO [ec46260f] Running /usr/bin/env git remote update --prune as deploy@157.245.53.198
+ DEBUG [ec46260f] Command: cd /home/deploy/ksr-dev/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [ec46260f] 	Fetching origin
+  INFO [ec46260f] Finished in 1.012 seconds with exit status 0 (successful).
+ DEBUG [9620c3ce] Running if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [9620c3ce] Command: if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi
+ DEBUG [9620c3ce] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [5c802b97] Running /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203130154 as deploy@157.245.53.198
+ DEBUG [5c802b97] Command: cd /home/deploy/ksr-dev/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203130154 )
+  INFO [5c802b97] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [0e6334a4] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/ksr-dev/releases/20191203130154 as deploy@157.245.53.198
+ DEBUG [0e6334a4] Command: cd /home/deploy/ksr-dev/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/ksr-dev/releases/20191203130154 )
+  INFO [0e6334a4] Finished in 0.389 seconds with exit status 0 (successful).
+ DEBUG [33b88752] Running if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [33b88752] Command: if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi
+ DEBUG [33b88752] Finished in 0.123 seconds with exit status 0 (successful).
+ DEBUG [0ba655ff] Running /usr/bin/env git rev-list --max-count=1 master as deploy@157.245.53.198
+ DEBUG [0ba655ff] Command: cd /home/deploy/ksr-dev/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [0ba655ff] 	188540ab6fa8e02581bc7ac3259d3015f185721e
+ DEBUG [0ba655ff] Finished in 0.132 seconds with exit status 0 (successful).
+ DEBUG [2463dbb8] Running if test ! -d /home/deploy/ksr-dev/releases/20191203130154; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130154'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [2463dbb8] Command: if test ! -d /home/deploy/ksr-dev/releases/20191203130154; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130154'" 1>&2; false; fi
+ DEBUG [2463dbb8] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [ee5719d7] Running /usr/bin/env echo "188540ab6fa8e02581bc7ac3259d3015f185721e" > REVISION as deploy@157.245.53.198
+ DEBUG [ee5719d7] Command: cd /home/deploy/ksr-dev/releases/20191203130154 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env echo "188540ab6fa8e02581bc7ac3259d3015f185721e" > REVISION )
+  INFO [ee5719d7] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [46cdf345] Running /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203130154 /home/deploy/ksr-dev/releases/20191203130154/tmp /home/deploy/ksr-dev/releases/20191203130154/public as deploy@157.245.53.198
+ DEBUG [46cdf345] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203130154 /home/deploy/ksr-dev/releases/20191203130154/tmp /home/deploy/ksr-dev/releases/20191203130154/public )
+  INFO [46cdf345] Finished in 0.125 seconds with exit status 0 (successful).
+ DEBUG [c74af160] Running [ -L /home/deploy/ksr-dev/releases/20191203130154/log ] as deploy@157.245.53.198
+ DEBUG [c74af160] Command: [ -L /home/deploy/ksr-dev/releases/20191203130154/log ]
+ DEBUG [c74af160] Finished in 0.127 seconds with exit status 1 (failed).
+ DEBUG [b0e52b68] Running [ -d /home/deploy/ksr-dev/releases/20191203130154/log ] as deploy@157.245.53.198
+ DEBUG [b0e52b68] Command: [ -d /home/deploy/ksr-dev/releases/20191203130154/log ]
+ DEBUG [b0e52b68] Finished in 0.127 seconds with exit status 0 (successful).
+  INFO [7e5b21d4] Running /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203130154/log as deploy@157.245.53.198
+ DEBUG [7e5b21d4] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203130154/log )
+  INFO [7e5b21d4] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [c72f3e3b] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/log /home/deploy/ksr-dev/releases/20191203130154/log as deploy@157.245.53.198
+ DEBUG [c72f3e3b] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/log /home/deploy/ksr-dev/releases/20191203130154/log )
+  INFO [c72f3e3b] Finished in 0.131 seconds with exit status 0 (successful).
+ DEBUG [f5602dd5] Running [ -L /home/deploy/ksr-dev/releases/20191203130154/tmp/pids ] as deploy@157.245.53.198
+ DEBUG [f5602dd5] Command: [ -L /home/deploy/ksr-dev/releases/20191203130154/tmp/pids ]
+ DEBUG [f5602dd5] Finished in 0.126 seconds with exit status 1 (failed).
+ DEBUG [57ac2412] Running [ -d /home/deploy/ksr-dev/releases/20191203130154/tmp/pids ] as deploy@157.245.53.198
+ DEBUG [57ac2412] Command: [ -d /home/deploy/ksr-dev/releases/20191203130154/tmp/pids ]
+ DEBUG [57ac2412] Finished in 0.127 seconds with exit status 1 (failed).
+  INFO [45c4682d] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/pids /home/deploy/ksr-dev/releases/20191203130154/tmp/pids as deploy@157.245.53.198
+ DEBUG [45c4682d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/pids /home/deploy/ksr-dev/releases/20191203130154/tmp/pids )
+  INFO [45c4682d] Finished in 0.128 seconds with exit status 0 (successful).
+ DEBUG [783fa9a9] Running [ -L /home/deploy/ksr-dev/releases/20191203130154/tmp/cache ] as deploy@157.245.53.198
+ DEBUG [783fa9a9] Command: [ -L /home/deploy/ksr-dev/releases/20191203130154/tmp/cache ]
+ DEBUG [783fa9a9] Finished in 0.128 seconds with exit status 1 (failed).
+ DEBUG [ca15e4af] Running [ -d /home/deploy/ksr-dev/releases/20191203130154/tmp/cache ] as deploy@157.245.53.198
+ DEBUG [ca15e4af] Command: [ -d /home/deploy/ksr-dev/releases/20191203130154/tmp/cache ]
+ DEBUG [ca15e4af] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [f1fe8526] Running /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203130154/tmp/cache as deploy@157.245.53.198
+ DEBUG [f1fe8526] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203130154/tmp/cache )
+  INFO [f1fe8526] Finished in 0.200 seconds with exit status 0 (successful).
+  INFO [a63b3169] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/cache /home/deploy/ksr-dev/releases/20191203130154/tmp/cache as deploy@157.245.53.198
+ DEBUG [a63b3169] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/cache /home/deploy/ksr-dev/releases/20191203130154/tmp/cache )
+  INFO [a63b3169] Finished in 0.122 seconds with exit status 0 (successful).
+ DEBUG [6cf5c314] Running [ -L /home/deploy/ksr-dev/releases/20191203130154/tmp/sockets ] as deploy@157.245.53.198
+ DEBUG [6cf5c314] Command: [ -L /home/deploy/ksr-dev/releases/20191203130154/tmp/sockets ]
+ DEBUG [6cf5c314] Finished in 0.121 seconds with exit status 1 (failed).
+ DEBUG [32436b1f] Running [ -d /home/deploy/ksr-dev/releases/20191203130154/tmp/sockets ] as deploy@157.245.53.198
+ DEBUG [32436b1f] Command: [ -d /home/deploy/ksr-dev/releases/20191203130154/tmp/sockets ]
+ DEBUG [32436b1f] Finished in 0.124 seconds with exit status 1 (failed).
+  INFO [cc82fcc6] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/sockets /home/deploy/ksr-dev/releases/20191203130154/tmp/sockets as deploy@157.245.53.198
+ DEBUG [cc82fcc6] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/sockets /home/deploy/ksr-dev/releases/20191203130154/tmp/sockets )
+  INFO [cc82fcc6] Finished in 0.126 seconds with exit status 0 (successful).
+ DEBUG [3247c863] Running [ -L /home/deploy/ksr-dev/releases/20191203130154/public/system ] as deploy@157.245.53.198
+ DEBUG [3247c863] Command: [ -L /home/deploy/ksr-dev/releases/20191203130154/public/system ]
+ DEBUG [3247c863] Finished in 0.123 seconds with exit status 1 (failed).
+ DEBUG [0694d972] Running [ -d /home/deploy/ksr-dev/releases/20191203130154/public/system ] as deploy@157.245.53.198
+ DEBUG [0694d972] Command: [ -d /home/deploy/ksr-dev/releases/20191203130154/public/system ]
+ DEBUG [0694d972] Finished in 0.124 seconds with exit status 1 (failed).
+  INFO [7ce9a94c] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/public/system /home/deploy/ksr-dev/releases/20191203130154/public/system as deploy@157.245.53.198
+ DEBUG [7ce9a94c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/public/system /home/deploy/ksr-dev/releases/20191203130154/public/system )
+  INFO [7ce9a94c] Finished in 0.125 seconds with exit status 0 (successful).
+ DEBUG [63ee3875] Running [ -L /home/deploy/ksr-dev/releases/20191203130154/public/assets ] as deploy@157.245.53.198
+ DEBUG [63ee3875] Command: [ -L /home/deploy/ksr-dev/releases/20191203130154/public/assets ]
+ DEBUG [63ee3875] Finished in 0.120 seconds with exit status 1 (failed).
+ DEBUG [926578b0] Running [ -d /home/deploy/ksr-dev/releases/20191203130154/public/assets ] as deploy@157.245.53.198
+ DEBUG [926578b0] Command: [ -d /home/deploy/ksr-dev/releases/20191203130154/public/assets ]
+ DEBUG [926578b0] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [c590447e] Running /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203130154/public/assets as deploy@157.245.53.198
+ DEBUG [c590447e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203130154/public/assets )
+  INFO [c590447e] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [178ef6ce] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/public/assets /home/deploy/ksr-dev/releases/20191203130154/public/assets as deploy@157.245.53.198
+ DEBUG [178ef6ce] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/public/assets /home/deploy/ksr-dev/releases/20191203130154/public/assets )
+  INFO [178ef6ce] Finished in 0.124 seconds with exit status 0 (successful).
+ DEBUG [6424a05a] Running if test ! -d /home/deploy/ksr-dev/releases/20191203130154; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130154'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [6424a05a] Command: if test ! -d /home/deploy/ksr-dev/releases/20191203130154; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130154'" 1>&2; false; fi
+ DEBUG [6424a05a] Finished in 0.127 seconds with exit status 0 (successful).
+ DEBUG [9ddb7e9d] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /home/deploy/ksr-dev/shared/bundle as deploy@157.245.53.198
+ DEBUG [9ddb7e9d] Command: cd /home/deploy/ksr-dev/releases/20191203130154 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /home/deploy/ksr-dev/shared/bundle )
+ DEBUG [9ddb7e9d] 	The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+ DEBUG [9ddb7e9d] 	The following gems are missing
+ DEBUG [9ddb7e9d] 	 * public_suffix (4.0.1)
+ DEBUG [9ddb7e9d] 	 * addressable (2.7.0)
+ DEBUG [9ddb7e9d] 	 * io-like (0.3.0)
+ DEBUG [9ddb7e9d] 	 * archive-zip (0.12.0)
+ DEBUG [9ddb7e9d] 	 * bindex (0.8.1)
+ DEBUG [9ddb7e9d] 	 * sassc (2.2.1)
+ DEBUG [9ddb7e9d] 	 * sassc-rails (2.1.2)
+ DEBUG [9ddb7e9d] 	 * bootstrap (4.3.1)
+ DEBUG [9ddb7e9d] 	 * byebug (11.0.1)
+ DEBUG [9ddb7e9d] 	 * regexp_parser (1.6.0)
+ DEBUG [9ddb7e9d] 	 * xpath (3.2.0)
+ DEBUG [9ddb7e9d] 	 * capybara (3.29.0)
+ DEBUG [9ddb7e9d] 	 * childprocess (3.0.0)
+ DEBUG [9ddb7e9d] 	 * chromedriver-helper (2.1.1)
+ DEBUG [9ddb7e9d] 	 * ruby_dep (1.5.0)
+ DEBUG [9ddb7e9d] 	 * listen (3.1.5)
+ DEBUG [9ddb7e9d] 	 * rubyzip (2.0.0)
+ DEBUG [9ddb7e9d] 	 * selenium-webdriver (3.142.6)
+ DEBUG [9ddb7e9d] 	 * spring (2.1.0)
+ DEBUG [9ddb7e9d] 	 * spring-watcher-listen (2.0.1)
+ DEBUG [9ddb7e9d] 	 * web-console (3.7.0)
+ DEBUG [9ddb7e9d] 	Install missing gems with `bundle install`
+ DEBUG [9ddb7e9d] Finished in 0.757 seconds with exit status 1 (failed).
+  INFO [19954513] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /home/deploy/ksr-dev/shared/bundle --jobs 4 --without development test --deployment --quiet as deploy@157.245.53.198
+ DEBUG [19954513] Command: cd /home/deploy/ksr-dev/releases/20191203130154 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /home/deploy/ksr-dev/shared/bundle --jobs 4 --without development test --deployment --quiet )
+  INFO [19954513] Finished in 169.289 seconds with exit status 0 (successful).
+ DEBUG [f71d0077] Running if test ! -d /home/deploy/ksr-dev/releases/20191203130154; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130154'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [f71d0077] Command: if test ! -d /home/deploy/ksr-dev/releases/20191203130154; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130154'" 1>&2; false; fi
+ DEBUG [f71d0077] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [655de1e6] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as deploy@157.245.53.198
+ DEBUG [655de1e6] Command: cd /home/deploy/ksr-dev/releases/20191203130154 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [655de1e6] 	yarn install v1.19.2
+ DEBUG [655de1e6] 	[1/4] Resolving packages...
+ DEBUG [655de1e6] 	[2/4] Fetching packages...
+ DEBUG [655de1e6] 	[3/4] Linking dependencies...
+ DEBUG [655de1e6] 	[4/4] Building fresh packages...
+ DEBUG [655de1e6] 	success Saved lockfile.
+ DEBUG [655de1e6] 	Done in 0.10s.
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:54.284055 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/main-d6de21806074e3c4b03b73a10a22ab4686b873b97757bc57a563565e5fe9e21e.js
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:54.284581 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/main-d6de21806074e3c4b03b73a10a22ab4686b873b97757bc57a563565e5fe9e21e.js.gz
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:55.640664 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/homes-b4aa8567979533732cf09281ddb53df9e6ed7dec50a2b99e2d37c8ad2929b113.css
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:55.641288 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/homes-b4aa8567979533732cf09281ddb53df9e6ed7dec50a2b99e2d37c8ad2929b113.css.gz
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:56.413685 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/skrollr.min-dcdd2117f90f3e9b0a654fbc26fbee177e41fc3d14168b783f82acc095dcbbd4.js
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:56.414444 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/skrollr.min-dcdd2117f90f3e9b0a654fbc26fbee177e41fc3d14168b783f82acc095dcbbd4.js.gz
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.487914 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/bootstrap.bundle.min-8e9ec1a4f7f2d9d90622483015240db014378314a15a177ce917ca84675c621f.js
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.488539 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/bootstrap.bundle.min-8e9ec1a4f7f2d9d90622483015240db014378314a15a177ce917ca84675c621f.js.gz
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.495022 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/Fevicon-69130f57d7a94bcf7ed9bff2b927c38a4bb751880bf88e83fabbc2e54f273876.png
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.497828 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/dfac-873c2e59142290bc5b5ad346a29095fa0871d4cf0e25f8d573e2c8bb0e78ad7d.jpg
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.500878 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/diklap-f079a3499719ce7f04001402e8fde91cdf7ea4ef0f280556645e0f254bdc8dcf.jpg
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.504247 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/diklat-0d59903ca33ef5cca0e845b0aee17240aa152a50934b8cbf2fac831a3c153c99.jpg
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.508282 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/donor-img-f72212af197e2b98cde8bef831cf9cf00197c4a55b550ad84d25ffc26710dd0d.jpg
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.511543 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/email-fe6d250313c5f2dcde8d9e5c53d4328f5d9c2c2618c830ad2aa8f44b07f38dcd.png
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.514732 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/hero-img-68e34aac1bc0ad04b4e6595120d415234e11180c05a1193fd2b8b051563c7789.png
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.517682 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/litbang-03d573626f210a230852f5829868bdd32e5d7f92f04c7ddea784e5977bcaa2b5.png
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.520028 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/logo-1ac930a539e01e5c16affc5c1aa88ce5bb180dea0ea176258f387595ccf6d7c4.png
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.522213 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/ots-1ccb1cd4c6463fa085dc8c56fd0c649ab3d197321044c01348915656b38c0117.jpg
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.524053 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/section-icon-2ef3eb0e6b7a88db14af59c46f010459006631addb5fabae1b6b8dc19b0911fd.png
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.525422 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/service2-cee39375bca3921b7acd944a53cf32d6e30452f98bce30b5772f68d896270fb8.png
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.526807 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/service3-803512ff3d47c98b2c88413e890174991a7da2a7c8c8ba980c3f9e6ed934e481.png
+ DEBUG [655de1e6] 	I, [2019-12-03T13:04:58.528417 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/wa-d021c09dee5aafc28146d0bbc09eb63a2abfa19f3004e35e8e53f12213d0a96b.png
+ DEBUG [655de1e6] 	I, [2019-12-03T13:05:11.382934 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/application-5d525d17710273f2a7ac4fa4f46f8e7682a341cf2259e235e425f925c8f7bd4e.js
+ DEBUG [655de1e6] 	I, [2019-12-03T13:05:11.383967 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/application-5d525d17710273f2a7ac4fa4f46f8e7682a341cf2259e235e425f925c8f7bd4e.js.gz
+ DEBUG [655de1e6] 	I, [2019-12-03T13:05:12.744195 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/application-ebc965487b4da7065c8822839593dc15aff254130b02eef37fa7e9aee6538f9a.css
+ DEBUG [655de1e6] 	I, [2019-12-03T13:05:12.744799 #22378]  INFO -- : Writing /home/deploy/ksr-dev/releases/20191203130154/public/assets/application-ebc965487b4da7065c8822839593dc15aff254130b02eef37fa7e9aee6538f9a.css.gz
+  INFO [655de1e6] Finished in 23.045 seconds with exit status 0 (successful).
+ DEBUG [23e05f3a] Running if test ! -d /home/deploy/ksr-dev/releases/20191203130154; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130154'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [23e05f3a] Command: if test ! -d /home/deploy/ksr-dev/releases/20191203130154; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130154'" 1>&2; false; fi
+ DEBUG [23e05f3a] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [583d10d8] Running /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203130154/assets_manifest_backup as deploy@157.245.53.198
+ DEBUG [583d10d8] Command: cd /home/deploy/ksr-dev/releases/20191203130154 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203130154/assets_manifest_backup )
+  INFO [583d10d8] Finished in 0.126 seconds with exit status 0 (successful).
+ DEBUG [b63c2303] Running /usr/bin/env ls /home/deploy/ksr-dev/releases/20191203130154/public/assets/.sprockets-manifest* as deploy@157.245.53.198
+ DEBUG [b63c2303] Command: cd /home/deploy/ksr-dev/releases/20191203130154 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ls /home/deploy/ksr-dev/releases/20191203130154/public/assets/.sprockets-manifest* )
+ DEBUG [b63c2303] 	/home/deploy/ksr-dev/releases/20191203130154/public/assets/.sprockets-manifest-a96555452e678d135748f10c98ba1502.json
+ DEBUG [b63c2303] Finished in 0.133 seconds with exit status 0 (successful).
+ DEBUG [b1be817b] Running /usr/bin/env ls /home/deploy/ksr-dev/releases/20191203130154/public/assets/.sprockets-manifest* as deploy@157.245.53.198
+ DEBUG [b1be817b] Command: cd /home/deploy/ksr-dev/releases/20191203130154 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ls /home/deploy/ksr-dev/releases/20191203130154/public/assets/.sprockets-manifest* )
+ DEBUG [b1be817b] 	/home/deploy/ksr-dev/releases/20191203130154/public/assets/.sprockets-manifest-a96555452e678d135748f10c98ba1502.json
+ DEBUG [b1be817b] Finished in 0.129 seconds with exit status 0 (successful).
+  INFO [6919608b] Running /usr/bin/env cp /home/deploy/ksr-dev/releases/20191203130154/public/assets/.sprockets-manifest-a96555452e678d135748f10c98ba1502.json /home/deploy/ksr-dev/releases/20191203130154/assets_manifest_backup as deploy@157.245.53.198
+ DEBUG [6919608b] Command: cd /home/deploy/ksr-dev/releases/20191203130154 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env cp /home/deploy/ksr-dev/releases/20191203130154/public/assets/.sprockets-manifest-a96555452e678d135748f10c98ba1502.json /home/deploy/ksr-dev/releases/20191203130154/assets_manifest_backup )
+  INFO [6919608b] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [cc488a1e] Running if test ! -d /home/deploy/ksr-dev/releases/20191203130154; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130154'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [cc488a1e] Command: if test ! -d /home/deploy/ksr-dev/releases/20191203130154; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130154'" 1>&2; false; fi
+ DEBUG [cc488a1e] Finished in 0.121 seconds with exit status 0 (successful).
+  INFO [ee56f39d] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as deploy@157.245.53.198
+ DEBUG [ee56f39d] Command: cd /home/deploy/ksr-dev/releases/20191203130154 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+ DEBUG [ee56f39d] 	  [1m[35m (18.5ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (35.5ms)[0m  [1m[35mCREATE TABLE `schema_migrations` (`version` varchar(255) NOT NULL PRIMARY KEY)[0m
+  [1m[35m (25.1ms)[0m  [1m[35mCREATE TABLE `ar_internal_metadata` (`key` varchar(255) NOT NULL PRIMARY KEY, `value` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT GET_LOCK('63894018001737630', 0)[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateMembers (20191116131532)
+== 20191116131532 CreateMembers: migrating ====================================
+-- create_table(:members)
+  [1m[35m (16.4ms)[0m  [1m[35mCREATE TABLE `members` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `nim` varchar(255), `fakultas` varchar(255), `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+   -> 0.0178s
+== 20191116131532 CreateMembers: migrated (0.0178s) ===========================
+
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (1.2ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20191116131532')[0m
+  [1m[35m (3.0ms)[0m  [1m[35mCOMMIT[0m
+Migrating to CreateEvents (20191127120935)
+== 20191127120935 CreateEvents: migrating =====================================
+-- create_table(:events)
+  [1m[35m (19.1ms)[0m  [1m[35mCREATE TABLE `events` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255), `description` varchar(255), `time` date, `created_at` datetime NOT NULL, `updated_at` datetime NOT NULL)[0m
+   -> 0.0206s
+== 20191127120935 CreateEvents: migrated (0.0207s) ============================
+
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20191127120935')[0m
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.7ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO `ar_internal_metadata` (`key`, `value`, `created_at`, `updated_at`) VALUES ('environment', 'production', '2019-12-03 13:05:15', '2019-12-03 13:05:15')[0m
+  [1m[35m (3.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('63894018001737630')[0m
+  INFO [ee56f39d] Finished in 2.086 seconds with exit status 0 (successful).
+  INFO [bbed52fd] Running /usr/bin/env ln -s /home/deploy/ksr-dev/releases/20191203130154 /home/deploy/ksr-dev/releases/current as deploy@157.245.53.198
+ DEBUG [bbed52fd] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/releases/20191203130154 /home/deploy/ksr-dev/releases/current )
+  INFO [bbed52fd] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [81144145] Running /usr/bin/env mv /home/deploy/ksr-dev/releases/current /home/deploy/ksr-dev as deploy@157.245.53.198
+ DEBUG [81144145] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mv /home/deploy/ksr-dev/releases/current /home/deploy/ksr-dev )
+  INFO [81144145] Finished in 0.129 seconds with exit status 0 (successful).
+ DEBUG [8d263b52] Running if test ! -d /home/deploy/ksr-dev/releases/20191203130154; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130154'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [8d263b52] Command: if test ! -d /home/deploy/ksr-dev/releases/20191203130154; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130154'" 1>&2; false; fi
+ DEBUG [8d263b52] Finished in 0.126 seconds with exit status 0 (successful).
+ DEBUG [dcca6cea] Running /usr/bin/env passenger -v as deploy@157.245.53.198
+ DEBUG [dcca6cea] Command: cd /home/deploy/ksr-dev/releases/20191203130154 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env passenger -v )
+ DEBUG [dcca6cea] 	Phusion Passenger 6.0.4
+ DEBUG [dcca6cea] Finished in 0.316 seconds with exit status 0 (successful).
+  INFO [b743c783] Running /usr/bin/env passenger-config restart-app /home/deploy/ksr-dev --ignore-app-not-running as deploy@157.245.53.198
+ DEBUG [b743c783] Command: cd /home/deploy/ksr-dev/releases/20191203130154 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env passenger-config restart-app /home/deploy/ksr-dev --ignore-app-not-running )
+ DEBUG [b743c783] 	There are no Phusion Passenger-served applications running whose paths begin with '/home/deploy/ksr-dev'.
+  INFO [b743c783] Finished in 0.372 seconds with exit status 0 (successful).
+ DEBUG [6af9ccfc] Running /usr/bin/env ls -x /home/deploy/ksr-dev/releases as deploy@157.245.53.198
+ DEBUG [6af9ccfc] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ls -x /home/deploy/ksr-dev/releases )
+ DEBUG [6af9ccfc] 	20191203125001	20191203130154
+ DEBUG [6af9ccfc] Finished in 0.129 seconds with exit status 0 (successful).
+ DEBUG [acf50a24] Running if test ! -d /home/deploy/ksr-dev/releases; then echo "Directory does not exist '/home/deploy/ksr-dev/releases'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [acf50a24] Command: if test ! -d /home/deploy/ksr-dev/releases; then echo "Directory does not exist '/home/deploy/ksr-dev/releases'" 1>&2; false; fi
+ DEBUG [acf50a24] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [fc48c304] Running /usr/bin/env echo "Branch master (at 188540ab6fa8e02581bc7ac3259d3015f185721e) deployed as release 20191203130154 by grafiters" >> /home/deploy/ksr-dev/revisions.log as deploy@157.245.53.198
+ DEBUG [fc48c304] Command: cd /home/deploy/ksr-dev/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env echo "Branch master (at 188540ab6fa8e02581bc7ac3259d3015f185721e) deployed as release 20191203130154 by grafiters" >> /home/deploy/ksr-dev/revisions.log )
+  INFO [fc48c304] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO ---------------------------------------------------------------------------
+  INFO START 2019-12-03 20:08:17 +0700 cap production deploy
+  INFO ---------------------------------------------------------------------------
+ DEBUG [e46ed750] Running [ -d $HOME/.rbenv/versions/2.5.4 ] as deploy@157.245.53.198
+ DEBUG [e46ed750] Command: [ -d $HOME/.rbenv/versions/2.5.4 ]
+ DEBUG [e46ed750] Finished in 3.114 seconds with exit status 0 (successful).
+ DEBUG [6af4937e] Running /usr/bin/env which passenger as deploy@157.245.53.198
+ DEBUG [6af4937e] Command: /usr/bin/env which passenger
+ DEBUG [6af4937e] 	/usr/bin/passenger
+ DEBUG [6af4937e] Finished in 0.122 seconds with exit status 0 (successful).
+  INFO [f858a0d1] Running /usr/bin/env mkdir -p /tmp as deploy@157.245.53.198
+ DEBUG [f858a0d1] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mkdir -p /tmp )
+  INFO [f858a0d1] Finished in 0.123 seconds with exit status 0 (successful).
+ DEBUG Uploading /tmp/git-ssh-ksr-dev-production-grafiters.sh 0.0%
+  INFO Uploading /tmp/git-ssh-ksr-dev-production-grafiters.sh 100.0%
+  INFO [6a032cbb] Running /usr/bin/env chmod 700 /tmp/git-ssh-ksr-dev-production-grafiters.sh as deploy@157.245.53.198
+ DEBUG [6a032cbb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env chmod 700 /tmp/git-ssh-ksr-dev-production-grafiters.sh )
+  INFO [6a032cbb] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [3c86e53e] Running /usr/bin/env git ls-remote https://github.com/Grafiters/ksr-dev.git HEAD as deploy@157.245.53.198
+ DEBUG [3c86e53e] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git ls-remote https://github.com/Grafiters/ksr-dev.git HEAD )
+ DEBUG [3c86e53e] 	188540ab6fa8e02581bc7ac3259d3015f185721e	HEAD
+  INFO [3c86e53e] Finished in 0.996 seconds with exit status 0 (successful).
+  INFO [da85b3fb] Running /usr/bin/env mkdir -p /home/deploy/ksr-dev/shared /home/deploy/ksr-dev/releases as deploy@157.245.53.198
+ DEBUG [da85b3fb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mkdir -p /home/deploy/ksr-dev/shared /home/deploy/ksr-dev/releases )
+  INFO [da85b3fb] Finished in 0.130 seconds with exit status 0 (successful).
+  INFO [646c67dc] Running /usr/bin/env mkdir -p /home/deploy/ksr-dev/shared/log /home/deploy/ksr-dev/shared/tmp/pids /home/deploy/ksr-dev/shared/tmp/cache /home/deploy/ksr-dev/shared/tmp/sockets /home/deploy/ksr-dev/shared/public/system /home/deploy/ksr-dev/shared/public/assets as deploy@157.245.53.198
+ DEBUG [646c67dc] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mkdir -p /home/deploy/ksr-dev/shared/log /home/deploy/ksr-dev/shared/tmp/pids /home/deploy/ksr-dev/shared/tmp/cache /home/deploy/ksr-dev/shared/tmp/sockets /home/deploy/ksr-dev/shared/public/system /home/deploy/ksr-dev/shared/public/assets )
+  INFO [646c67dc] Finished in 0.119 seconds with exit status 0 (successful).
+ DEBUG [bcb02db0] Running [ -f /home/deploy/ksr-dev/current/REVISION ] as deploy@157.245.53.198
+ DEBUG [bcb02db0] Command: [ -f /home/deploy/ksr-dev/current/REVISION ]
+ DEBUG [bcb02db0] Finished in 0.122 seconds with exit status 0 (successful).
+ DEBUG [d723e46f] Running /usr/bin/env cat /home/deploy/ksr-dev/current/REVISION 2>/dev/null as deploy@157.245.53.198
+ DEBUG [d723e46f] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env cat /home/deploy/ksr-dev/current/REVISION 2>/dev/null )
+ DEBUG [d723e46f] 	188540ab6fa8e02581bc7ac3259d3015f185721e
+ DEBUG [d723e46f] Finished in 0.130 seconds with exit status 0 (successful).
+ DEBUG [b6c94e36] Running [ -f /home/deploy/ksr-dev/repo/HEAD ] as deploy@157.245.53.198
+ DEBUG [b6c94e36] Command: [ -f /home/deploy/ksr-dev/repo/HEAD ]
+ DEBUG [b6c94e36] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO The repository mirror is at /home/deploy/ksr-dev/repo
+ DEBUG [0dd056cf] Running if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [0dd056cf] Command: if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi
+ DEBUG [0dd056cf] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [82ad2fcc] Running /usr/bin/env git remote set-url origin https://github.com/Grafiters/ksr-dev.git as deploy@157.245.53.198
+ DEBUG [82ad2fcc] Command: cd /home/deploy/ksr-dev/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git remote set-url origin https://github.com/Grafiters/ksr-dev.git )
+  INFO [82ad2fcc] Finished in 0.131 seconds with exit status 0 (successful).
+  INFO [08e3ed95] Running /usr/bin/env git remote update --prune as deploy@157.245.53.198
+ DEBUG [08e3ed95] Command: cd /home/deploy/ksr-dev/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git remote update --prune )
+ DEBUG [08e3ed95] 	Fetching origin
+  INFO [08e3ed95] Finished in 0.979 seconds with exit status 0 (successful).
+ DEBUG [5b662a9f] Running if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [5b662a9f] Command: if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi
+ DEBUG [5b662a9f] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [1f1306ed] Running /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203130823 as deploy@157.245.53.198
+ DEBUG [1f1306ed] Command: cd /home/deploy/ksr-dev/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203130823 )
+  INFO [1f1306ed] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [aee37ec8] Running /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/ksr-dev/releases/20191203130823 as deploy@157.245.53.198
+ DEBUG [aee37ec8] Command: cd /home/deploy/ksr-dev/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git archive master | /usr/bin/env tar -x -f - -C /home/deploy/ksr-dev/releases/20191203130823 )
+  INFO [aee37ec8] Finished in 0.387 seconds with exit status 0 (successful).
+ DEBUG [c787be42] Running if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [c787be42] Command: if test ! -d /home/deploy/ksr-dev/repo; then echo "Directory does not exist '/home/deploy/ksr-dev/repo'" 1>&2; false; fi
+ DEBUG [c787be42] Finished in 0.121 seconds with exit status 0 (successful).
+ DEBUG [76fc2f67] Running /usr/bin/env git rev-list --max-count=1 master as deploy@157.245.53.198
+ DEBUG [76fc2f67] Command: cd /home/deploy/ksr-dev/repo && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" GIT_ASKPASS="/bin/echo" GIT_SSH="/tmp/git-ssh-ksr-dev-production-grafiters.sh" ; /usr/bin/env git rev-list --max-count=1 master )
+ DEBUG [76fc2f67] 	188540ab6fa8e02581bc7ac3259d3015f185721e
+ DEBUG [76fc2f67] Finished in 0.130 seconds with exit status 0 (successful).
+ DEBUG [09d776f5] Running if test ! -d /home/deploy/ksr-dev/releases/20191203130823; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130823'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [09d776f5] Command: if test ! -d /home/deploy/ksr-dev/releases/20191203130823; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130823'" 1>&2; false; fi
+ DEBUG [09d776f5] Finished in 0.128 seconds with exit status 0 (successful).
+  INFO [b223154a] Running /usr/bin/env echo "188540ab6fa8e02581bc7ac3259d3015f185721e" > REVISION as deploy@157.245.53.198
+ DEBUG [b223154a] Command: cd /home/deploy/ksr-dev/releases/20191203130823 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env echo "188540ab6fa8e02581bc7ac3259d3015f185721e" > REVISION )
+  INFO [b223154a] Finished in 0.131 seconds with exit status 0 (successful).
+  INFO [7d77bf25] Running /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203130823 /home/deploy/ksr-dev/releases/20191203130823/tmp /home/deploy/ksr-dev/releases/20191203130823/public as deploy@157.245.53.198
+ DEBUG [7d77bf25] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203130823 /home/deploy/ksr-dev/releases/20191203130823/tmp /home/deploy/ksr-dev/releases/20191203130823/public )
+  INFO [7d77bf25] Finished in 0.122 seconds with exit status 0 (successful).
+ DEBUG [a5a622eb] Running [ -L /home/deploy/ksr-dev/releases/20191203130823/log ] as deploy@157.245.53.198
+ DEBUG [a5a622eb] Command: [ -L /home/deploy/ksr-dev/releases/20191203130823/log ]
+ DEBUG [a5a622eb] Finished in 0.123 seconds with exit status 1 (failed).
+ DEBUG [d6794464] Running [ -d /home/deploy/ksr-dev/releases/20191203130823/log ] as deploy@157.245.53.198
+ DEBUG [d6794464] Command: [ -d /home/deploy/ksr-dev/releases/20191203130823/log ]
+ DEBUG [d6794464] Finished in 0.121 seconds with exit status 0 (successful).
+  INFO [0e005327] Running /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203130823/log as deploy@157.245.53.198
+ DEBUG [0e005327] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203130823/log )
+  INFO [0e005327] Finished in 0.758 seconds with exit status 0 (successful).
+  INFO [a444f1f5] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/log /home/deploy/ksr-dev/releases/20191203130823/log as deploy@157.245.53.198
+ DEBUG [a444f1f5] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/log /home/deploy/ksr-dev/releases/20191203130823/log )
+  INFO [a444f1f5] Finished in 1.093 seconds with exit status 0 (successful).
+ DEBUG [495863b9] Running [ -L /home/deploy/ksr-dev/releases/20191203130823/tmp/pids ] as deploy@157.245.53.198
+ DEBUG [495863b9] Command: [ -L /home/deploy/ksr-dev/releases/20191203130823/tmp/pids ]
+ DEBUG [495863b9] Finished in 0.680 seconds with exit status 1 (failed).
+ DEBUG [271950ef] Running [ -d /home/deploy/ksr-dev/releases/20191203130823/tmp/pids ] as deploy@157.245.53.198
+ DEBUG [271950ef] Command: [ -d /home/deploy/ksr-dev/releases/20191203130823/tmp/pids ]
+ DEBUG [271950ef] Finished in 0.163 seconds with exit status 1 (failed).
+  INFO [409d20d2] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/pids /home/deploy/ksr-dev/releases/20191203130823/tmp/pids as deploy@157.245.53.198
+ DEBUG [409d20d2] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/pids /home/deploy/ksr-dev/releases/20191203130823/tmp/pids )
+  INFO [409d20d2] Finished in 0.178 seconds with exit status 0 (successful).
+ DEBUG [7b1fb2ae] Running [ -L /home/deploy/ksr-dev/releases/20191203130823/tmp/cache ] as deploy@157.245.53.198
+ DEBUG [7b1fb2ae] Command: [ -L /home/deploy/ksr-dev/releases/20191203130823/tmp/cache ]
+ DEBUG [7b1fb2ae] Finished in 0.190 seconds with exit status 1 (failed).
+ DEBUG [fb7d8964] Running [ -d /home/deploy/ksr-dev/releases/20191203130823/tmp/cache ] as deploy@157.245.53.198
+ DEBUG [fb7d8964] Command: [ -d /home/deploy/ksr-dev/releases/20191203130823/tmp/cache ]
+ DEBUG [fb7d8964] Finished in 0.211 seconds with exit status 0 (successful).
+  INFO [0f306c73] Running /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203130823/tmp/cache as deploy@157.245.53.198
+ DEBUG [0f306c73] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203130823/tmp/cache )
+  INFO [0f306c73] Finished in 0.273 seconds with exit status 0 (successful).
+  INFO [c7611253] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/cache /home/deploy/ksr-dev/releases/20191203130823/tmp/cache as deploy@157.245.53.198
+ DEBUG [c7611253] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/cache /home/deploy/ksr-dev/releases/20191203130823/tmp/cache )
+  INFO [c7611253] Finished in 0.186 seconds with exit status 0 (successful).
+ DEBUG [80eb258c] Running [ -L /home/deploy/ksr-dev/releases/20191203130823/tmp/sockets ] as deploy@157.245.53.198
+ DEBUG [80eb258c] Command: [ -L /home/deploy/ksr-dev/releases/20191203130823/tmp/sockets ]
+ DEBUG [80eb258c] Finished in 0.204 seconds with exit status 1 (failed).
+ DEBUG [8ec43358] Running [ -d /home/deploy/ksr-dev/releases/20191203130823/tmp/sockets ] as deploy@157.245.53.198
+ DEBUG [8ec43358] Command: [ -d /home/deploy/ksr-dev/releases/20191203130823/tmp/sockets ]
+ DEBUG [8ec43358] Finished in 0.204 seconds with exit status 1 (failed).
+  INFO [069ff960] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/sockets /home/deploy/ksr-dev/releases/20191203130823/tmp/sockets as deploy@157.245.53.198
+ DEBUG [069ff960] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/tmp/sockets /home/deploy/ksr-dev/releases/20191203130823/tmp/sockets )
+  INFO [069ff960] Finished in 0.222 seconds with exit status 0 (successful).
+ DEBUG [4a260d8e] Running [ -L /home/deploy/ksr-dev/releases/20191203130823/public/system ] as deploy@157.245.53.198
+ DEBUG [4a260d8e] Command: [ -L /home/deploy/ksr-dev/releases/20191203130823/public/system ]
+ DEBUG [4a260d8e] Finished in 0.201 seconds with exit status 1 (failed).
+ DEBUG [a682a89b] Running [ -d /home/deploy/ksr-dev/releases/20191203130823/public/system ] as deploy@157.245.53.198
+ DEBUG [a682a89b] Command: [ -d /home/deploy/ksr-dev/releases/20191203130823/public/system ]
+ DEBUG [a682a89b] Finished in 0.198 seconds with exit status 1 (failed).
+  INFO [c3cb22bb] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/public/system /home/deploy/ksr-dev/releases/20191203130823/public/system as deploy@157.245.53.198
+ DEBUG [c3cb22bb] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/public/system /home/deploy/ksr-dev/releases/20191203130823/public/system )
+  INFO [c3cb22bb] Finished in 0.231 seconds with exit status 0 (successful).
+ DEBUG [7bb5117f] Running [ -L /home/deploy/ksr-dev/releases/20191203130823/public/assets ] as deploy@157.245.53.198
+ DEBUG [7bb5117f] Command: [ -L /home/deploy/ksr-dev/releases/20191203130823/public/assets ]
+ DEBUG [7bb5117f] Finished in 0.205 seconds with exit status 1 (failed).
+ DEBUG [3d179344] Running [ -d /home/deploy/ksr-dev/releases/20191203130823/public/assets ] as deploy@157.245.53.198
+ DEBUG [3d179344] Command: [ -d /home/deploy/ksr-dev/releases/20191203130823/public/assets ]
+ DEBUG [3d179344] Finished in 0.193 seconds with exit status 0 (successful).
+  INFO [18befd80] Running /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203130823/public/assets as deploy@157.245.53.198
+ DEBUG [18befd80] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env rm -rf /home/deploy/ksr-dev/releases/20191203130823/public/assets )
+  INFO [18befd80] Finished in 0.186 seconds with exit status 0 (successful).
+  INFO [3d6de65d] Running /usr/bin/env ln -s /home/deploy/ksr-dev/shared/public/assets /home/deploy/ksr-dev/releases/20191203130823/public/assets as deploy@157.245.53.198
+ DEBUG [3d6de65d] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/shared/public/assets /home/deploy/ksr-dev/releases/20191203130823/public/assets )
+  INFO [3d6de65d] Finished in 0.484 seconds with exit status 0 (successful).
+ DEBUG [b008533f] Running if test ! -d /home/deploy/ksr-dev/releases/20191203130823; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130823'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [b008533f] Command: if test ! -d /home/deploy/ksr-dev/releases/20191203130823; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130823'" 1>&2; false; fi
+ DEBUG [b008533f] Finished in 0.157 seconds with exit status 0 (successful).
+ DEBUG [a2b3347c] Running $HOME/.rbenv/bin/rbenv exec bundle check --path /home/deploy/ksr-dev/shared/bundle as deploy@157.245.53.198
+ DEBUG [a2b3347c] Command: cd /home/deploy/ksr-dev/releases/20191203130823 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; $HOME/.rbenv/bin/rbenv exec bundle check --path /home/deploy/ksr-dev/shared/bundle )
+ DEBUG [a2b3347c] 	The dependency tzinfo-data (>= 0) will be unused by any of the platforms Bundler is installing for. Bundler is installing for ruby but the dependency is only for x86-mingw32, x86-mswin32, x64-mingw32, java. To add those platforms to the bundle, run `bundle lock --add-platform x86-mingw32 x86-mswin32 x64-mingw32 java`.
+ DEBUG [a2b3347c] 	The following gems are missing
+ DEBUG [a2b3347c] 	 * public_suffix (4.0.1)
+ DEBUG [a2b3347c] 	 * addressable (2.7.0)
+ DEBUG [a2b3347c] 	 * io-like (0.3.0)
+ DEBUG [a2b3347c] 	 * archive-zip (0.12.0)
+ DEBUG [a2b3347c] 	 * bindex (0.8.1)
+ DEBUG [a2b3347c] 	 * byebug (11.0.1)
+ DEBUG [a2b3347c] 	 * regexp_parser (1.6.0)
+ DEBUG [a2b3347c] 	 * xpath (3.2.0)
+ DEBUG [a2b3347c] 	 * capybara (3.29.0)
+ DEBUG [a2b3347c] 	 * childprocess (3.0.0)
+ DEBUG [a2b3347c] 	 * chromedriver-helper (2.1.1)
+ DEBUG [a2b3347c] 	 * ruby_dep (1.5.0)
+ DEBUG [a2b3347c] 	 * listen (3.1.5)
+ DEBUG [a2b3347c] 	 * rubyzip (2.0.0)
+ DEBUG [a2b3347c] 	 * selenium-webdriver (3.142.6)
+ DEBUG [a2b3347c] 	 * spring (2.1.0)
+ DEBUG [a2b3347c] 	 * spring-watcher-listen (2.0.1)
+ DEBUG [a2b3347c] 	 * web-console (3.7.0)
+ DEBUG [a2b3347c] 	Install missing gems with `bundle install`
+ DEBUG [a2b3347c] Finished in 0.545 seconds with exit status 1 (failed).
+  INFO [d30c2269] Running $HOME/.rbenv/bin/rbenv exec bundle install --path /home/deploy/ksr-dev/shared/bundle --jobs 4 --without development test --deployment --quiet as deploy@157.245.53.198
+ DEBUG [d30c2269] Command: cd /home/deploy/ksr-dev/releases/20191203130823 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; $HOME/.rbenv/bin/rbenv exec bundle install --path /home/deploy/ksr-dev/shared/bundle --jobs 4 --without development test --deployment --quiet )
+  INFO [d30c2269] Finished in 0.742 seconds with exit status 0 (successful).
+ DEBUG [b008f90a] Running if test ! -d /home/deploy/ksr-dev/releases/20191203130823; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130823'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [b008f90a] Command: if test ! -d /home/deploy/ksr-dev/releases/20191203130823; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130823'" 1>&2; false; fi
+ DEBUG [b008f90a] Finished in 0.124 seconds with exit status 0 (successful).
+  INFO [f64545c4] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile as deploy@157.245.53.198
+ DEBUG [f64545c4] Command: cd /home/deploy/ksr-dev/releases/20191203130823 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" RAILS_ENV="production" RAILS_GROUPS="" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake assets:precompile )
+ DEBUG [f64545c4] 	yarn install v1.19.2
+ DEBUG [f64545c4] 	[1/4] Resolving packages...
+ DEBUG [f64545c4] 	[2/4] Fetching packages...
+ DEBUG [f64545c4] 	[3/4] Linking dependencies...
+ DEBUG [f64545c4] 	[4/4] Building fresh packages...
+ DEBUG [f64545c4] 	success Saved lockfile.
+ DEBUG [f64545c4] 	Done in 0.08s.
+  INFO [f64545c4] Finished in 2.519 seconds with exit status 0 (successful).
+ DEBUG [543bd432] Running if test ! -d /home/deploy/ksr-dev/releases/20191203130823; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130823'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [543bd432] Command: if test ! -d /home/deploy/ksr-dev/releases/20191203130823; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130823'" 1>&2; false; fi
+ DEBUG [543bd432] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [db17e3b7] Running /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203130823/assets_manifest_backup as deploy@157.245.53.198
+ DEBUG [db17e3b7] Command: cd /home/deploy/ksr-dev/releases/20191203130823 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mkdir -p /home/deploy/ksr-dev/releases/20191203130823/assets_manifest_backup )
+  INFO [db17e3b7] Finished in 0.124 seconds with exit status 0 (successful).
+ DEBUG [725382de] Running /usr/bin/env ls /home/deploy/ksr-dev/releases/20191203130823/public/assets/.sprockets-manifest* as deploy@157.245.53.198
+ DEBUG [725382de] Command: cd /home/deploy/ksr-dev/releases/20191203130823 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ls /home/deploy/ksr-dev/releases/20191203130823/public/assets/.sprockets-manifest* )
+ DEBUG [725382de] 	/home/deploy/ksr-dev/releases/20191203130823/public/assets/.sprockets-manifest-a96555452e678d135748f10c98ba1502.json
+ DEBUG [725382de] Finished in 0.128 seconds with exit status 0 (successful).
+ DEBUG [6f01373b] Running /usr/bin/env ls /home/deploy/ksr-dev/releases/20191203130823/public/assets/.sprockets-manifest* as deploy@157.245.53.198
+ DEBUG [6f01373b] Command: cd /home/deploy/ksr-dev/releases/20191203130823 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ls /home/deploy/ksr-dev/releases/20191203130823/public/assets/.sprockets-manifest* )
+ DEBUG [6f01373b] 	/home/deploy/ksr-dev/releases/20191203130823/public/assets/.sprockets-manifest-a96555452e678d135748f10c98ba1502.json
+ DEBUG [6f01373b] Finished in 0.125 seconds with exit status 0 (successful).
+  INFO [c47bc7dd] Running /usr/bin/env cp /home/deploy/ksr-dev/releases/20191203130823/public/assets/.sprockets-manifest-a96555452e678d135748f10c98ba1502.json /home/deploy/ksr-dev/releases/20191203130823/assets_manifest_backup as deploy@157.245.53.198
+ DEBUG [c47bc7dd] Command: cd /home/deploy/ksr-dev/releases/20191203130823 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env cp /home/deploy/ksr-dev/releases/20191203130823/public/assets/.sprockets-manifest-a96555452e678d135748f10c98ba1502.json /home/deploy/ksr-dev/releases/20191203130823/assets_manifest_backup )
+  INFO [c47bc7dd] Finished in 0.126 seconds with exit status 0 (successful).
+  INFO [deploy:migrate] Run `rake db:migrate`
+ DEBUG [ab952cc4] Running if test ! -d /home/deploy/ksr-dev/releases/20191203130823; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130823'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [ab952cc4] Command: if test ! -d /home/deploy/ksr-dev/releases/20191203130823; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130823'" 1>&2; false; fi
+ DEBUG [ab952cc4] Finished in 0.123 seconds with exit status 0 (successful).
+  INFO [4252a6f1] Running $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate as deploy@157.245.53.198
+ DEBUG [4252a6f1] Command: cd /home/deploy/ksr-dev/releases/20191203130823 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" RAILS_ENV="production" ; $HOME/.rbenv/bin/rbenv exec bundle exec rake db:migrate )
+ DEBUG [4252a6f1] 	  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT GET_LOCK('63894018001737630', 0)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('63894018001737630')[0m
+  INFO [4252a6f1] Finished in 2.305 seconds with exit status 0 (successful).
+  INFO [bbfd90ca] Running /usr/bin/env ln -s /home/deploy/ksr-dev/releases/20191203130823 /home/deploy/ksr-dev/releases/current as deploy@157.245.53.198
+ DEBUG [bbfd90ca] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ln -s /home/deploy/ksr-dev/releases/20191203130823 /home/deploy/ksr-dev/releases/current )
+  INFO [bbfd90ca] Finished in 0.526 seconds with exit status 0 (successful).
+  INFO [c579594c] Running /usr/bin/env mv /home/deploy/ksr-dev/releases/current /home/deploy/ksr-dev as deploy@157.245.53.198
+ DEBUG [c579594c] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env mv /home/deploy/ksr-dev/releases/current /home/deploy/ksr-dev )
+  INFO [c579594c] Finished in 0.454 seconds with exit status 0 (successful).
+ DEBUG [517dfd81] Running if test ! -d /home/deploy/ksr-dev/releases/20191203130823; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130823'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [517dfd81] Command: if test ! -d /home/deploy/ksr-dev/releases/20191203130823; then echo "Directory does not exist '/home/deploy/ksr-dev/releases/20191203130823'" 1>&2; false; fi
+ DEBUG [517dfd81] Finished in 0.204 seconds with exit status 0 (successful).
+ DEBUG [4cda2dee] Running /usr/bin/env passenger -v as deploy@157.245.53.198
+ DEBUG [4cda2dee] Command: cd /home/deploy/ksr-dev/releases/20191203130823 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env passenger -v )
+ DEBUG [4cda2dee] 	Phusion Passenger 6.0.4
+ DEBUG [4cda2dee] Finished in 0.327 seconds with exit status 0 (successful).
+  INFO [ed3b8338] Running /usr/bin/env passenger-config restart-app /home/deploy/ksr-dev --ignore-app-not-running as deploy@157.245.53.198
+ DEBUG [ed3b8338] Command: cd /home/deploy/ksr-dev/releases/20191203130823 && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env passenger-config restart-app /home/deploy/ksr-dev --ignore-app-not-running )
+ DEBUG [ed3b8338] 	There are no Phusion Passenger-served applications running whose paths begin with '/home/deploy/ksr-dev'.
+  INFO [ed3b8338] Finished in 0.365 seconds with exit status 0 (successful).
+ DEBUG [e36c56ae] Running /usr/bin/env ls -x /home/deploy/ksr-dev/releases as deploy@157.245.53.198
+ DEBUG [e36c56ae] Command: ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env ls -x /home/deploy/ksr-dev/releases )
+ DEBUG [e36c56ae] 	20191203125001	20191203130154	20191203130823
+ DEBUG [e36c56ae] Finished in 0.211 seconds with exit status 0 (successful).
+ DEBUG [b2b939d3] Running if test ! -d /home/deploy/ksr-dev/releases; then echo "Directory does not exist '/home/deploy/ksr-dev/releases'" 1>&2; false; fi as deploy@157.245.53.198
+ DEBUG [b2b939d3] Command: if test ! -d /home/deploy/ksr-dev/releases; then echo "Directory does not exist '/home/deploy/ksr-dev/releases'" 1>&2; false; fi
+ DEBUG [b2b939d3] Finished in 0.216 seconds with exit status 0 (successful).
+  INFO [6d45dd72] Running /usr/bin/env echo "Branch master (at 188540ab6fa8e02581bc7ac3259d3015f185721e) deployed as release 20191203130823 by grafiters" >> /home/deploy/ksr-dev/revisions.log as deploy@157.245.53.198
+ DEBUG [6d45dd72] Command: cd /home/deploy/ksr-dev/releases && ( export RBENV_ROOT="$HOME/.rbenv" RBENV_VERSION="2.5.4" ; /usr/bin/env echo "Branch master (at 188540ab6fa8e02581bc7ac3259d3015f185721e) deployed as release 20191203130823 by grafiters" >> /home/deploy/ksr-dev/revisions.log )
+  INFO [6d45dd72] Finished in 0.204 seconds with exit status 0 (successful).
