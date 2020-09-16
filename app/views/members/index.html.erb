@@ -1,69 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Star Admin</title>
+  <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css" />
+  <link rel="stylesheet" href="node_modules/flag-icon-css/css/flag-icon.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="shortcut icon" href="images/favicon.png" />
 </head>
+
 <body>
-    <div class="navbar navbar-inverse" role="navigation" id="navigation">
-        <div class="header">
-            <div class="navbar-header">
-                <div class="logo text-white"><h3>DASHBOARD</h3></div>
-            </div>
-        </div>
-    </div>
-    <div class="sidebar-menu">
-        <div class="wrapper">
-            <nav id="sidebar">
-                <ul class="navbar-sidebar-menu">
-                    <li class="text-black"><a href="#"><i class="fa fa-home"></i>Dashboard</a></li>
-                </ul>
-            </nav>
-            <div class="wrapper-content">
-                <div class="content">
-                    <ol class="breadcrumb">
-                        <li><a href="#">Admin</a></li>
-                    </ol>
-                    <div class="content-panel">
-                        <div class="row">
-                            <div class="panel panel-primary">
-                                <div class="panel-heading">All Members</div>
-                                <div class="panel-body">
-                                    <table class="table table-striped">
-                                        <% @member.each do |f| %>
-                                          <thead>
-                                            <tr>
-                                              <th scope="col">nama</th>
-                                              <th scope="col">nim</th>
-                                              <th scope="col">fakultas</th>
-                                              <th scope="col">action</th>
-                                            </tr>
-                                          </thead>
-                                          <tbody>
-                                            <tr>
-                                              <td><%= f.name %></td>
-                                              <td><%= f.nim %></td>
-                                              <td><%= f.fakultas %></td>
-                                              <td><%= link_to "edit", edit_member_path(f) %>
-                                                  <%= link_to "delete", member_path(f) %></td>
-                                            </tr>
-                                          </tbody>
-                                    <% end %>
-                                    </table>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+  <div class=" container-scroller">
+    <nav class="navbar navbar-default col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="bg-white text-center navbar-brand-wrapper">
+        <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo_star_black.png" /></a>
+        <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo_star_mini.jpg" alt=""></a>
+      </div>
+      <div class="navbar-menu-wrapper d-flex align-items-center">
+        <form class="form-inline mt-2 mt-md-0 d-none d-lg-block">
+          <input class="form-control mr-sm-2 search" placeholder="Hallo Guys">
+        </form>
+        <ul class="navbar-nav ml-lg-auto d-flex align-items-center flex-row">
+          <li class="nav-item">
+            <a class="nav-link profile-pic" href="#"><img class="rounded-circle" src="images/face.jpg" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"><i class="fa fa-th"></i></a>
+          </li>
+        </ul>
+        <button class="navbar-toggler navbar-dark navbar-toggler-right d-lg-none align-self-center" type="button" data-toggle="offcanvas">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="container-fluid">
+      <div class="row row-offcanvas row-offcanvas-right">
+        <nav class="bg-white sidebar sidebar-offcanvas" id="sidebar">
+          <div class="user-info">
+            <img src="images/face.jpg" alt="">
+            <p class="name">Richard V.Welsh</p>
+            <p class="designation">Manager</p>
+            <span class="online"></span>
+          </div>
+          <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <img src="images/icons/1.png" alt="">
+                <span class="menu-title">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="/dashboard/member">
+                <img src="images/icons/9.png" alt="">
+                <span class="menu-title">Members</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/dashboard/event">
+                <img src="images/icons/9.png" alt="">
+                <span class="menu-title">Events </span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">
+                <img src="images/icons/1.png" alt="">
+                <span class="menu-title">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- partial -->
+        <div class="content-wrapper">
+          <h3 class="page-heading mb-4">Dashboard</h3>
+          <div class="card-deck">
+            <div class="card col-lg-12 px-0 mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Last Billings</h5>
+                <div class="table-responsive">
+                  <table class="table center-aligned-table">
+                    <thead>
+                      <tr class="text-primary">
+                        <th>No</th>
+                        <th>Name</th>
+                        <th>NIM Member</th>
+                        <th>Fakultas</th>
+                        <th></th>
+                        <th></th>
+                        <th></th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr class="">
+                        <td>034</td>
+                        <td>Iphone 7</td>
+                        <td>12 May 2017</td>
+                        <td>Dispatched</td>
+                        <td><a href="#" class="btn btn-outline-success btn-sm">Edit</a></td>
+                        <td><a href="#" class="btn btn-outline-warning btn-sm">Delete</a></td>
+                      </tr>
+                    </tbody>
+                  </table>
                 </div>
+              </div>
             </div>
+          </div>
         </div>
+        <footer class="footer">
+          <div class="container-fluid clearfix">
+            <span class="float-right">
+                <a href="#">Star Admin</a> &copy; 2017
+            </span>
+          </div>
+        </footer>
+      </div>
     </div>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </div>
+
+#   <script src="node_modules/jquery/dist/jquery.min.js"></script>
+#   <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+#   <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+#   <script src="node_modules/chart.js/dist/Chart.min.js"></script>
+#   <script src="node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB5NXz9eVnyJOA81wimI8WYE08kW_JMe8g&callback=initMap" async defer></script>
+#   <script src="js/off-canvas.js"></script>
+#   <script src="js/hoverable-collapse.js"></script>
+#   <script src="js/misc.js"></script>
+#   <script src="js/chart.js"></script>
+#   <script src="js/maps.js"></script>
 </body>
+
 </html>
